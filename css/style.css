@@ -266,6 +266,10 @@ section {
     color: var(--primary-color);
 }
 
+.gem-nav-link:not(.active):not(:hover) {
+    color: rgba(129, 75, 85, 0.76);
+}
+
 .gem-desktop-nav>.gem-nav-list>.gem-nav-item>.gem-nav-link.active::after {
     content: "";
     position: absolute;
@@ -464,9 +468,15 @@ section {
     .gem-mobile-home-row>a {
         display: block;
         padding: 13px 5px;
-        color: var(--primary-color);
+        color: rgba(129, 75, 85, 0.76);
         font-size: 16px;
         font-weight: 600;
+    }
+
+    .gem-mobile-nav-list>li>a.active,
+    .gem-mobile-home-row>a.active {
+        color: var(--primary-color);
+        font-weight: 700;
     }
 
     /* Mobile Home Dropdown */
@@ -556,6 +566,7 @@ section {
 
 }
 
+
 /* ======================================
    SMALL MOBILE
 ====================================== */
@@ -604,6 +615,21 @@ html.dark-mode .gem-nav-link,
 html.dark-mode .gem-mobile-nav-list>li>a,
 html.dark-mode .gem-mobile-home-row>a {
     color: var(--secondary-color);
+}
+
+html.dark-mode .gem-nav-link:not(.active):not(:hover) {
+    color: rgba(232, 205, 189, 0.76);
+}
+
+html.dark-mode .gem-mobile-nav-list>li>a:not(.active):not(:hover),
+html.dark-mode .gem-mobile-home-row>a:not(.active):not(:hover) {
+    color: rgba(232, 205, 189, 0.76);
+}
+
+html.dark-mode .gem-mobile-nav-list>li>a.active,
+html.dark-mode .gem-mobile-home-row>a.active {
+    color: var(--secondary-color);
+    font-weight: 700;
 }
 
 html.dark-mode .gem-dropdown-menu,
@@ -24089,4 +24115,1372 @@ html[dir="rtl"] .gem-contact-map-button:hover i {
     .gem-contact-map-visual {
         min-height: 300px;
     }
+}
+
+
+/* =========================================
+   IPAD PRO - DIY KITS STACKED LAYOUT
+========================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* MAIN LAYOUT - VERTICAL */
+    .gem-diy-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: stretch;
+    }
+
+    /* SHOWCASE IMAGE - TOP */
+    .gem-diy-showcase {
+        position: relative;
+        width: 100%;
+        height: 440px;
+        min-height: 440px;
+        border-radius: 130px 130px 10px 10px;
+        overflow: hidden;
+    }
+
+    .gem-diy-showcase>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+    }
+
+    .gem-diy-round-badge {
+        right: 30px;
+        top: 25px;
+    }
+
+    .gem-diy-image-caption {
+        padding: 30px;
+    }
+
+    .gem-diy-image-caption h3 {
+        font-size: 30px;
+    }
+
+    /* RIGHT CONTENT - BELOW IMAGE */
+    .gem-diy-products {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* BENEFITS */
+    .gem-diy-benefits {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 22px 15px;
+        gap: 0;
+    }
+
+    .gem-diy-benefit {
+        min-height: 105px;
+        padding: 10px;
+        border-right: 1px solid var(--primary-color);
+    }
+
+    .gem-diy-benefit:last-child {
+        border-right: none;
+    }
+
+    /* KIT CARDS */
+    .gem-diy-grid {
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .gem-diy-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .gem-diy-card-image {
+        height: 190px;
+    }
+
+    .gem-diy-card-content {
+        padding: 18px 15px;
+    }
+
+    .gem-diy-card-content h3 {
+        font-size: 21px;
+    }
+
+    .gem-diy-card-content p {
+        font-size: 15px;
+    }
+
+    /* RTL */
+    html[dir="rtl"] .gem-diy-round-badge {
+        right: auto;
+        left: 30px;
+    }
+
+    html[dir="rtl"] .gem-diy-benefit {
+        border-right: none;
+        border-left: 1px solid var(--primary-color);
+    }
+
+    html[dir="rtl"] .gem-diy-benefit:last-child {
+        border-left: none;
+    }
+}
+
+
+/* IPAD PRO - CENTER LAST PRODUCT CARD */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .gem-material-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gem-material-product:last-child {
+        grid-column: 1 / -1;
+        width: calc(50% - 8px);
+        justify-self: center;
+    }
+
+    html[dir="rtl"] .gem-material-product:last-child {
+        justify-self: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .gem-learning-image-note {
+        right: -25px;
+        left: auto;
+    }
+
+    html[dir="rtl"] .gem-learning-image-note {
+        right: auto;
+        left: -25px;
+    }
+
+}
+
+
+/* IPAD PRO - CENTER GROUP SIZE DETAIL */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .gem-featured-workshop-details>div:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: max-content;
+    }
+
+}
+
+
+/* IPAD MINI - CENTER LAST DIY KIT CARD */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .gem-diy-grid .gem-diy-card:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 18px) / 2);
+        justify-self: center;
+    }
+
+}
+
+
+/* IPAD MINI - COMMUNITY CARD LEFT ALIGN */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .gem-testimonial-bottom {
+        justify-content: flex-start !important;
+        text-align: left !important;
+    }
+
+    .gem-testimonial-community-text {
+        text-align: left !important;
+        align-items: flex-start;
+    }
+
+    .gem-testimonial-community-text h3,
+    .gem-testimonial-community-text p {
+        text-align: left !important;
+    }
+
+    .gem-testimonial-btn {
+        margin-left: auto;
+    }
+
+    /* RTL */
+    html[dir="rtl"] .gem-testimonial-bottom {
+        flex-direction: row-reverse;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-community-text,
+    html[dir="rtl"] .gem-testimonial-community-text h3,
+    html[dir="rtl"] .gem-testimonial-community-text p {
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-btn {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+}
+
+
+/* IPAD MINI - CTA EYEBROW CENTER ALIGN */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .gem-connect-cta-content {
+        text-align: center;
+    }
+
+    .gem-connect-eyebrow {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================
+   GEMNEST NEWSLETTER - IPAD MINI FIX
+   601px TO 768px
+========================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .gem-newsletter {
+        grid-template-columns: minmax(0, 1.15fr) minmax(155px, 0.85fr);
+        gap: 20px;
+        padding: 45px 28px;
+        align-items: center;
+        border-radius: 12px;
+    }
+
+    /* LEFT CONTENT */
+
+    .gem-newsletter-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .gem-newsletter-label {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        font-size: 13px;
+        line-height: 1.6;
+        letter-spacing: 1.2px;
+        margin-bottom: 17px;
+    }
+
+    .gem-newsletter-content h2 {
+        font-size: 35px;
+        line-height: 1.25;
+        margin-bottom: 14px;
+    }
+
+    .gem-newsletter-content>p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    /* EMAIL FORM */
+
+    .gem-newsletter-form {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    .gem-newsletter-input-wrap {
+        width: 100%;
+        min-height: 48px;
+        box-sizing: border-box;
+        padding: 0 13px;
+    }
+
+    .gem-newsletter-input-wrap input {
+        width: 100%;
+        min-width: 0;
+        font-size: 14px;
+        padding: 13px 0;
+    }
+
+    .gem-newsletter-btn {
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    .gem-newsletter-content .gem-newsletter-note {
+        font-size: 13px;
+        line-height: 1.6;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 14px;
+    }
+
+    /* RIGHT CIRCLE DECORATION */
+
+    .gem-newsletter-decoration {
+        width: 100%;
+        min-width: 0;
+        min-height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gem-newsletter-circle {
+        width: 165px;
+        height: 165px;
+        outline-offset: 7px;
+        gap: 6px;
+    }
+
+    .gem-newsletter-circle i {
+        font-size: 31px;
+        margin-bottom: 5px;
+    }
+
+    .gem-newsletter-circle span {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .gem-newsletter-sparkle {
+        font-size: 25px;
+    }
+
+    .sparkle-one {
+        top: 20px;
+        right: 15px;
+    }
+
+    .sparkle-two {
+        bottom: 20px;
+        left: 8px;
+        font-size: 33px;
+    }
+
+    .sparkle-three {
+        top: 50%;
+        left: 0;
+    }
+
+    /* RTL */
+
+    html[dir="rtl"] .gem-newsletter {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .gem-newsletter-content {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .gem-newsletter-label,
+    html[dir="rtl"] .gem-newsletter-note {
+        flex-direction: row-reverse;
+    }
+
+    html[dir="rtl"] .gem-newsletter-form {
+        flex-direction: column;
+    }
+
+    html[dir="rtl"] .sparkle-one {
+        right: auto;
+        left: 15px;
+    }
+
+    html[dir="rtl"] .sparkle-two {
+        left: auto;
+        right: 8px;
+    }
+
+    html[dir="rtl"] .sparkle-three {
+        left: auto;
+        right: 0;
+    }
+}
+
+
+/* IPAD MINI - NEWSLETTER LABEL ALIGNMENT */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .gem-newsletter-label {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center !important;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        width: auto;
+        gap: 9px;
+        line-height: 1.3;
+    }
+
+    .gem-newsletter-label i {
+        flex-shrink: 0;
+        line-height: 1;
+        margin: 0;
+    }
+
+    html[dir="rtl"] .gem-newsletter-label {
+        flex-direction: row-reverse;
+    }
+
+}
+
+
+/* =========================================
+   IPAD MINI - HOME 2 HEADINGS CENTER ALIGN
+========================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    /* SECTION 1 - HERO */
+
+    .gem2-hero-content {
+        text-align: center !important;
+    }
+
+    .gem2-eyebrow {
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gem2-hero-content h1 {
+        text-align: center;
+    }
+
+    /* SECTION 2 - MATERIALS */
+
+    .gem2-materials-heading {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .gem2-materials-eyebrow {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .gem2-materials-heading h2 {
+        text-align: center;
+    }
+
+    /* RTL */
+
+    html[dir="rtl"] .gem2-hero-content,
+    html[dir="rtl"] .gem2-materials-heading {
+        text-align: center !important;
+    }
+
+    html[dir="rtl"] .gem2-eyebrow,
+    html[dir="rtl"] .gem2-materials-eyebrow {
+        justify-content: center;
+    }
+}
+
+
+/* =========================================
+   IPAD MINI - INSPIRATION & MATERIALS
+   HEADING CENTER ALIGNMENT
+========================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    /* INSPIRATION SECTION */
+
+    .gem2-inspiration-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .gem2-inspiration-title {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .gem2-inspiration-eyebrow {
+        text-align: center;
+        width: 100%;
+    }
+
+    .gem2-inspiration-title h2 {
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* MATERIALS SECTION */
+
+    .gem2-materials-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .gem2-materials-heading {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .gem2-materials-eyebrow {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gem2-materials-heading h2 {
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* RTL SUPPORT */
+
+    html[dir="rtl"] .gem2-inspiration-header,
+    html[dir="rtl"] .gem2-inspiration-title,
+    html[dir="rtl"] .gem2-materials-header,
+    html[dir="rtl"] .gem2-materials-heading {
+        text-align: center !important;
+    }
+
+}
+
+
+/* =========================================
+   GEMNEST PRODUCTS - IPAD MINI CENTER FIX
+   601px TO 768px
+========================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    /* 1. LAST MATERIAL PRODUCT - CENTER */
+
+    .gem-material-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gem-material-product-grid .gem-material-product:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 18px) / 2);
+        justify-self: center;
+    }
+
+
+    /* 2. LAST CATEGORY POINT - CENTER */
+
+    .gem-category-bottom {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gem-category-strip-item:last-child {
+        grid-column: 1 / -1;
+        justify-content: center;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    .gem-category-strip-item:last-child>div:nth-child(2) {
+        flex: 0 1 auto;
+    }
+
+
+    /* 3. FEATURED DROPDOWN - CENTER */
+
+    .gem-catalogue-toolbar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gem-catalogue-search {
+        grid-column: 1 / -1;
+    }
+
+    .gem-catalogue-toolbar #gemSortFilter {
+        grid-column: 1 / -1;
+        width: 50%;
+        justify-self: center;
+    }
+
+
+    /* RTL SUPPORT */
+
+    html[dir="rtl"] .gem-category-strip-item:last-child {
+        flex-direction: row-reverse;
+    }
+
+    html[dir="rtl"] .gem-material-product-grid .gem-material-product:last-child {
+        justify-self: center;
+    }
+
+}
+
+
+/* IPAD MINI - THREE DETAILS IN ONE ROW */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .gem-featured-workshop-details {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .gem-featured-workshop-details>div {
+        grid-template-columns: 22px 1fr;
+        gap: 4px 7px;
+        min-width: 0;
+    }
+
+    .gem-featured-workshop-details span,
+    .gem-featured-workshop-details strong {
+        font-size: 12px;
+    }
+
+}
+
+
+/* PRODUCT SORT DROPDOWN - ARROW POSITION FIX */
+
+.gem-material-sort select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding-right: 48px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23814B55' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+/* DARK MODE */
+
+html.dark-mode .gem-material-sort select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23E8CDBD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+}
+
+
+/* RTL - PRODUCT SORT DROPDOWN */
+
+html[dir="rtl"] .gem-material-sort {
+    direction: rtl;
+}
+
+html[dir="rtl"] .gem-material-sort label {
+    text-align: right;
+}
+
+html[dir="rtl"] .gem-material-sort select {
+    direction: rtl;
+    text-align: right;
+    text-align-last: right;
+
+    padding-left: 48px !important;
+    padding-right: 13px !important;
+
+    background-position: left 10px center;
+}
+
+
+/* CATALOGUE FILTER DROPDOWN ARROW SPACING */
+
+.gem-catalogue-toolbar select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    padding-right: 55px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23514447' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-size: 18px 18px !important;
+    background-position: right 10px center !important;
+}
+
+/* DARK MODE */
+
+html.dark-mode .gem-catalogue-toolbar select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23E8CDBD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+}
+
+/* RTL MODE */
+
+html[dir="rtl"] .gem-catalogue-toolbar select {
+    direction: rtl;
+    text-align: right;
+    padding-left: 55px !important;
+    padding-right: 14px !important;
+    background-position: left 10px center !important;
+}
+
+
+/* RTL - ONLY HERO AND ABOUT SECTIONS */
+
+html[dir="rtl"] .gem-hero-content,
+html[dir="rtl"] .gem-hero-content h1,
+html[dir="rtl"] .gem-hero-content>p,
+html[dir="rtl"] .gem-about-content,
+html[dir="rtl"] .gem-about-content h2,
+html[dir="rtl"] .gem-about-description {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Hero subtitle */
+
+html[dir="rtl"] .gem-hero-subtitle {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+/* Hero buttons */
+
+html[dir="rtl"] .gem-hero-buttons {
+    flex-direction: row-reverse !important;
+    justify-content: flex-start !important;
+}
+
+/* About subtitle */
+
+html[dir="rtl"] .gem-about-subtitle {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+/* About feature cards */
+
+html[dir="rtl"] .gem-about-feature {
+    flex-direction: row-reverse !important;
+    text-align: right !important;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 1024px) {
+
+    html[dir="rtl"] .gem-hero-content,
+    html[dir="rtl"] .gem-about-content {
+        text-align: right !important;
+    }
+}
+
+
+/* ==========================================
+   GEMNEST HOME 1 - FINAL RTL HERO OVERRIDE
+   ONLY THE SCREENSHOT ELEMENTS
+========================================== */
+
+html[dir="rtl"] .gem-hero-content {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Welcome to GemNest */
+
+html[dir="rtl"] .gem-hero-subtitle {
+    direction: rtl !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    width: 100%;
+    text-align: right !important;
+}
+
+/* Main heading */
+
+html[dir="rtl"] .gem-hero-content h1 {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Description */
+
+html[dir="rtl"] .gem-hero-content>p {
+    direction: rtl !important;
+    text-align: right !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100%;
+}
+
+/* Shop Supplies & Join a Workshop */
+
+html[dir="rtl"] .gem-hero-buttons {
+    direction: rtl !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 100%;
+}
+
+html[dir="rtl"] .gem-hero-primary-btn,
+html[dir="rtl"] .gem-hero-secondary-btn {
+    direction: rtl !important;
+    flex-direction: row !important;
+}
+
+/* Beautiful Beads, Creative Supplies,
+   Made With Love */
+
+html[dir="rtl"] .gem-hero-highlights {
+    direction: rtl !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 100%;
+}
+
+html[dir="rtl"] .gem-hero-highlight {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    text-align: right !important;
+}
+
+/* Override existing tablet/mobile centering */
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .gem-hero-content,
+    html[dir="rtl"] .gem-hero-subtitle,
+    html[dir="rtl"] .gem-hero-content h1,
+    html[dir="rtl"] .gem-hero-content>p {
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .gem-hero-buttons,
+    html[dir="rtl"] .gem-hero-highlights {
+        justify-content: flex-start !important;
+        flex-direction: row !important;
+    }
+
+    html[dir="rtl"] .gem-hero-subtitle {
+        justify-content: flex-start !important;
+    }
+}
+
+/* Small mobile */
+
+@media (max-width: 600px) {
+
+    html[dir="rtl"] .gem-hero-buttons {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    html[dir="rtl"] .gem-hero-highlights {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+}
+
+
+/* ==========================================
+   GEMNEST ABOUT FEATURES - RTL FINAL FIX
+========================================== */
+
+html[dir="rtl"] .gem-about-feature {
+    direction: ltr !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    text-align: right !important;
+}
+
+/* Icon positioning */
+html[dir="rtl"] .gem-about-feature-icon {
+    flex-shrink: 0;
+    margin: 0 !important;
+}
+
+/* Text content */
+html[dir="rtl"] .gem-about-feature>div:last-child {
+    direction: ltr !important;
+    text-align: right !important;
+    flex: 1;
+    min-width: 0;
+}
+
+html[dir="rtl"] .gem-about-feature h3,
+html[dir="rtl"] .gem-about-feature p {
+    direction: ltr !important;
+    text-align: right !important;
+    unicode-bidi: normal !important;
+}
+
+/* Mobile and tablet */
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .gem-about-feature {
+        direction: ltr !important;
+        flex-direction: row-reverse !important;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .gem-about-feature>div:last-child {
+        direction: ltr !important;
+        text-align: right !important;
+    }
+
+}
+
+
+/* ==========================================
+   FEATURED PRODUCTS - RTL RIGHT ALIGN FIX
+========================================== */
+
+html[dir="rtl"] .gem-product-content {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Reviews and stars */
+
+html[dir="rtl"] .gem-product-rating {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    text-align: right !important;
+}
+
+/* Price and Add to Cart layout */
+
+html[dir="rtl"] .gem-product-bottom {
+    direction: rtl !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    width: 100%;
+    text-align: right !important;
+}
+
+/* Price */
+
+html[dir="rtl"] .gem-product-price {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    width: 100%;
+    text-align: right !important;
+}
+
+/* Add to Cart */
+
+html[dir="rtl"] .gem-cart-btn {
+    direction: rtl !important;
+    flex-direction: row-reverse !important;
+    align-self: flex-start !important;
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/* Mobile and tablet */
+
+@media (max-width: 1024px) {
+
+    html[dir="rtl"] .gem-product-bottom {
+        align-items: flex-start !important;
+    }
+
+    html[dir="rtl"] .gem-cart-btn {
+        align-self: flex-start !important;
+    }
+
+}
+
+/* Desktop featured product cards: place cart buttons below the price */
+@media (min-width: 1025px) {
+    .gem-featured .gem-product-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .gem-featured .gem-cart-btn {
+        align-self: flex-start;
+    }
+}
+
+
+/* ==========================================
+   GEMNEST TESTIMONIALS - RTL ALIGNMENT FIX
+========================================== */
+
+html[dir="rtl"] .gem-testimonial-layout {
+    direction: rtl !important;
+}
+
+/* Featured testimonial */
+
+html[dir="rtl"] .gem-testimonial-featured {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-testimonial-featured blockquote {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Featured customer details */
+
+html[dir="rtl"] .gem-testimonial-author {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-testimonial-author>div {
+    text-align: right !important;
+}
+
+/* Review cards */
+
+html[dir="rtl"] .gem-testimonial-card {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-testimonial-card-top {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+html[dir="rtl"] .gem-testimonial-card>p {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Customer image and details */
+
+html[dir="rtl"] .gem-testimonial-card-author {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-testimonial-card-author>div {
+    text-align: right !important;
+}
+
+/* Verified badge */
+
+html[dir="rtl"] .gem-testimonial-verified {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/* Quote icon */
+
+html[dir="rtl"] .gem-testimonial-quote-icon {
+    right: auto !important;
+    left: 30px !important;
+}
+
+/* Bottom community section */
+
+html[dir="rtl"] .gem-testimonial-bottom {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .gem-testimonial-community-text {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-testimonial-community-icon {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* ==========================================
+   TESTIMONIAL CUSTOMER - RTL LEFT ALIGN
+========================================== */
+
+html[dir="rtl"] .gem-testimonial-author {
+    direction: ltr !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: left !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+html[dir="rtl"] .gem-testimonial-author img {
+    order: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+html[dir="rtl"] .gem-testimonial-author>div {
+    order: 1 !important;
+    text-align: left !important;
+}
+
+html[dir="rtl"] .gem-testimonial-verified {
+    order: 2 !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    white-space: nowrap;
+}
+
+/* ==========================================
+   COMMUNITY STRIP - RTL FIX
+========================================== */
+
+html[dir="rtl"] .gem-testimonial-bottom {
+    direction: rtl !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    text-align: right !important;
+    gap: 25px !important;
+}
+
+html[dir="rtl"] .gem-testimonial-community-icon {
+    order: 3 !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+}
+
+html[dir="rtl"] .gem-testimonial-community-text {
+    order: 2 !important;
+    flex: 1 !important;
+    text-align: right !important;
+    min-width: 0 !important;
+}
+
+html[dir="rtl"] .gem-testimonial-btn {
+    order: 1 !important;
+    flex-shrink: 0 !important;
+    direction: rtl !important;
+    flex-direction: row-reverse !important;
+    justify-content: center !important;
+}
+
+html[dir="rtl"] .gem-testimonial-btn i {
+    transform: rotate(180deg);
+}
+
+/* Keep strip content inside the section */
+html[dir="rtl"] .gem-testimonial-bottom>* {
+    max-width: 100%;
+}
+
+
+/* ==========================================
+   GEMNEST CTA & NEWSLETTER - RTL FINAL FIX
+========================================== */
+
+/* CTA Content */
+html[dir="rtl"] .gem-connect-cta-content {
+    direction: rtl !important;
+    text-align: right !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+}
+
+/* CTA Eyebrow */
+html[dir="rtl"] .gem-connect-eyebrow {
+    direction: rtl !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* CTA Heading */
+html[dir="rtl"] .gem-connect-cta-content h2,
+html[dir="rtl"] .gem-connect-cta-content h2 span {
+    direction: rtl !important;
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* CTA Description */
+html[dir="rtl"] .gem-connect-cta-content>p {
+    direction: rtl !important;
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* CTA Buttons */
+html[dir="rtl"] .gem-connect-buttons {
+    direction: rtl !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+html[dir="rtl"] .gem-connect-primary-btn,
+html[dir="rtl"] .gem-connect-outline-btn {
+    direction: rtl !important;
+    flex-direction: row !important;
+}
+
+/* Newsletter Content */
+html[dir="rtl"] .gem-newsletter-content {
+    direction: rtl !important;
+    text-align: right !important;
+    align-items: flex-end !important;
+}
+
+/* Newsletter Heading and Description */
+html[dir="rtl"] .gem-newsletter-content h2,
+html[dir="rtl"] .gem-newsletter-content>p {
+    width: 100% !important;
+    text-align: right !important;
+}
+
+/* Newsletter Form */
+html[dir="rtl"] .gem-newsletter-form {
+    direction: rtl !important;
+    flex-direction: row !important;
+}
+
+/* Email Input */
+html[dir="rtl"] .gem-newsletter-input-wrap {
+    direction: rtl !important;
+    flex-direction: row !important;
+    text-align: right !important;
+}
+
+/* Privacy Note */
+html[dir="rtl"] .gem-newsletter-note {
+    direction: rtl !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-newsletter-note i {
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+}
+
+
+/* ==========================================
+   GEMNEST FOOTER - RTL ALIGNMENT FIX
+========================================== */
+
+html[dir="rtl"] .gem-footer {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* All Footer Columns */
+html[dir="rtl"] .gem-footer-brand,
+html[dir="rtl"] .gem-footer-links,
+html[dir="rtl"] .gem-footer-contact {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* About Description */
+html[dir="rtl"] .gem-footer-brand p,
+html[dir="rtl"] .gem-footer-contact>p {
+    text-align: right !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Footer Headings */
+html[dir="rtl"] .gem-footer-links h3,
+html[dir="rtl"] .gem-footer-contact h3 {
+    text-align: right !important;
+}
+
+/* Quick Links */
+html[dir="rtl"] .gem-footer-links ul {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-footer-links ul li {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-footer-links ul li a {
+    display: inline-block;
+    text-align: right !important;
+}
+
+/* Social Icons */
+html[dir="rtl"] .gem-footer-social {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+/* Contact Details */
+html[dir="rtl"] .gem-footer-contact-item {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-footer-contact-item i {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Footer Bottom */
+html[dir="rtl"] .gem-footer-bottom-container {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-footer-bottom p {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem-footer-bottom-links {
+    direction: rtl !important;
+    flex-direction: row !important;
 }
