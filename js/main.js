@@ -65,6 +65,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateTheme() {
 
         const isDark = html.classList.contains("dark-mode");
+        const logoSource = isDark ? "images/logo-white.png" : "images/logo.png";
+
+        document.querySelectorAll(".gem-logo img, .gem-footer-logo img").forEach(logo => {
+            if (!logo.src.endsWith(logoSource)) {
+                logo.src = logoSource;
+            }
+        });
 
         themeButtons.forEach(button => {
 

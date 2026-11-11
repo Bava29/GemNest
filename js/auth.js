@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateThemeControls() {
         const isDark = html.classList.contains("dark-mode");
+        const logo = document.querySelector(".gem-auth-logo img");
+        const logoSource = isDark ? "images/logo-white.png" : "images/logo.png";
+        if (logo && !logo.src.endsWith(logoSource)) logo.src = logoSource;
+
         themeButtons.forEach(button => {
             const icon = button.querySelector("i");
             const label = button.querySelector("span");
