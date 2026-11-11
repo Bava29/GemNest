@@ -619,3 +619,28 @@ html[dir="rtl"] .gem-auth-inline-link {
     direction: rtl;
     text-align: left;
 }
+
+/* Keep preference controls the same size on both auth pages and viewports */
+.gem-auth-toolbar .gem-auth-preference {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    flex: 0 0 40px;
+    padding: 0;
+}
+
+/* Stack social sign-in options on mobile */
+@media (max-width: 600px) {
+    .gem-auth-socials,
+    html[dir="rtl"] .gem-auth-socials {
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .gem-auth-socials .gem-auth-social {
+        width: 100%;
+        min-height: 45px;
+        flex: 0 0 45px;
+    }
+}

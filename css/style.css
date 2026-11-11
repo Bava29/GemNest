@@ -18195,7 +18195,7 @@ html[dir="rtl"] .gem-contact-map-button:hover i {
 
     .gem2-inspiration-gallery {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 260px 190px 190px 220px;
+        grid-template-rows: 260px 190px 220px;
         gap: 12px;
     }
 
@@ -18222,7 +18222,7 @@ html[dir="rtl"] .gem-contact-map-button:hover i {
     .gem2-gallery-quote {
         grid-column: 2;
         grid-row: 3;
-        padding: 12px;
+        padding: 18px 12px;
     }
 
     .gem2-gallery-overlay {
@@ -19857,7 +19857,6 @@ html[dir="rtl"] .gem-contact-map-button:hover i {
     }
 
 }
-
 
 /* ================= RTL RESPONSIVE FIXES ================= */
 
@@ -23934,7 +23933,7 @@ html[dir="rtl"] .gem-contact-map-button:hover i {
 
     .gem-enquiry-visual-note {
         top: 18px;
-        right: 12px;
+        right: 30px;
         max-width: calc(100% - 35px);
         padding: 12px 14px;
         font-size: 12px;
@@ -25132,6 +25131,55 @@ html[dir="rtl"] .gem-cart-btn {
     }
 }
 
+/* Materials section: keep its content right-aligned in RTL at every size */
+html[dir="rtl"] .gem2-materials-heading,
+html[dir="rtl"] .gem2-materials-heading h2,
+html[dir="rtl"] .gem2-materials-intro {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem2-materials-eyebrow {
+    direction: rtl;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* Home 2: correct RTL order and alignment for workshop, kit, and signup details */
+html[dir="rtl"] .gem2-workshop-benefit {
+    direction: rtl;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+html[dir="rtl"] .gem2-workshop-schedule-heading,
+html[dir="rtl"] .gem2-workshop-meta {
+    direction: rtl;
+    flex-direction: row !important;
+}
+
+html[dir="rtl"] .gem2-workshop-meta {
+    justify-content: flex-start !important;
+}
+
+html[dir="rtl"] .gem2-kit-step-heading {
+    direction: rtl;
+    flex-direction: row !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem2-community-input-wrap,
+html[dir="rtl"] .gem2-community-form button {
+    direction: rtl;
+    flex-direction: row !important;
+}
+
+@media (min-width: 481px) {
+    html[dir="rtl"] .gem2-community-form {
+        direction: rtl;
+        flex-direction: row !important;
+    }
+}
+
 
 /* ==========================================
    GEMNEST TESTIMONIALS - RTL ALIGNMENT FIX
@@ -25483,4 +25531,515 @@ html[dir="rtl"] .gem-footer-bottom p {
 html[dir="rtl"] .gem-footer-bottom-links {
     direction: rtl !important;
     flex-direction: row !important;
+}
+
+/* ======================================
+   HOME 2 HERO - RTL FINAL OVERRIDE
+====================================== */
+
+html[dir="rtl"] .gem2-hero,
+html[dir="rtl"] .gem2-hero-container {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .gem2-hero-content {
+    width: 100% !important;
+    text-align: right !important;
+    direction: rtl !important;
+    justify-self: stretch !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+html[dir="rtl"] .gem2-eyebrow {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .gem2-hero-content h1,
+html[dir="rtl"] .gem2-description {
+    width: 100% !important;
+    text-align: right !important;
+    direction: rtl !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+html[dir="rtl"] .gem2-description {
+    max-width: 620px;
+}
+
+html[dir="rtl"] .gem2-hero-actions {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+html[dir="rtl"] .gem2-primary-btn,
+html[dir="rtl"] .gem2-story-btn {
+    direction: rtl !important;
+    flex-direction: row !important;
+}
+
+html[dir="rtl"] .gem2-bottom-note {
+    width: 100% !important;
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    text-align: right !important;
+}
+
+/* Keep hero image positioning unchanged */
+html[dir="rtl"] .gem2-hero-visual {
+    direction: ltr !important;
+}
+
+/* =========================================
+   MOBILE FILTERS - 3 TOP + 3 BOTTOM
+========================================= */
+
+@media (max-width: 600px) {
+
+    .gem-featured .gem-product-filters {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        grid-template-rows: repeat(2, auto) !important;
+        gap: 12px 10px !important;
+
+        width: 100% !important;
+        margin: 30px auto 35px !important;
+        padding: 0 !important;
+
+        justify-content: stretch !important;
+        align-items: center !important;
+    }
+
+    .gem-featured .gem-product-filters .gem-filter-btn {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+        min-height: 42px !important;
+
+        padding: 10px 5px !important;
+        margin: 0 !important;
+
+        font-size: 14px !important;
+        white-space: nowrap !important;
+        border-radius: 30px !important;
+    }
+
+}
+
+/* Extra small mobile */
+
+@media (max-width: 380px) {
+
+    .gem-featured .gem-product-filters {
+        gap: 10px 8px !important;
+    }
+
+    .gem-featured .gem-product-filters .gem-filter-btn {
+        font-size: 13px !important;
+        padding: 9px 3px !important;
+        min-height: 40px !important;
+    }
+
+}
+
+/* Home page mobile layout refinements */
+@media (max-width: 600px) {
+    .gem-why-item {
+        grid-template-columns: 28px 44px minmax(0, 1fr);
+        gap: 10px;
+        padding: 17px 10px;
+    }
+
+    .gem-why-number {
+        padding-top: 8px;
+        font-size: 15px;
+    }
+
+    .gem-why-icon {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 44px;
+        border-radius: 10px;
+        font-size: 21px;
+    }
+
+    .gem-why-item-content {
+        min-width: 0;
+    }
+
+    .gem-why-item-content h3 {
+        margin-bottom: 6px;
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+    .gem-why-item-content p {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .gem-connect-cta-content {
+        width: 100%;
+        min-width: 0;
+        text-align: center;
+    }
+
+    .gem-connect-eyebrow {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 1.4px;
+        line-height: 1.5;
+    }
+
+    .gem-connect-cta-content h2,
+    .gem-connect-cta-content>p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gem-newsletter {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        width: 100%;
+        min-width: 0;
+        padding: 30px 20px;
+    }
+
+    .gem-newsletter-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .gem-newsletter-label {
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    .gem-newsletter-content h2 {
+        font-size: 36px;
+        line-height: 1.25;
+    }
+
+    .gem-newsletter-content>p {
+        font-size: 14px;
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    .gem-newsletter-form {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gem-newsletter-input-wrap {
+        width: 100%;
+        min-height: 50px;
+        padding: 0 13px;
+    }
+
+    .gem-newsletter-input-wrap input {
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    .gem-newsletter-btn {
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 16px;
+        font-size: 15px;
+    }
+
+    .gem-newsletter-decoration {
+        display: none;
+    }
+
+    .gem-newsletter-content .gem-newsletter-note {
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .gem-testimonial-author {
+        display: grid;
+        grid-template-columns: 52px minmax(0, 1fr);
+        grid-template-rows: auto auto;
+        align-items: center;
+        column-gap: 12px;
+        row-gap: 3px;
+        padding-top: 18px;
+    }
+
+    .gem-testimonial-author img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        width: 52px;
+        height: 52px;
+    }
+
+    .gem-testimonial-author>div:not(.gem-testimonial-verified) {
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 0;
+    }
+
+    .gem-testimonial-author h3 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .gem-testimonial-author>div:not(.gem-testimonial-verified)>span {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .gem-testimonial-verified {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: start;
+        margin: 2px 0 0;
+        font-size: 12px;
+    }
+
+    .gem-testimonial-bottom {
+        width: 100%;
+        min-width: 0;
+        padding: 20px 16px;
+    }
+
+    .gem-testimonial-community-text {
+        min-width: 0;
+    }
+
+    .gem-testimonial-community-text h3 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    .gem-testimonial-community-text p {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .gem-testimonial-btn {
+        width: 100%;
+        min-width: 0;
+        justify-content: center;
+        white-space: normal;
+    }
+
+    html[dir="rtl"] .gem-newsletter-form {
+        flex-direction: column !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-author {
+        direction: rtl !important;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-author>div:not(.gem-testimonial-verified) {
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-verified {
+        justify-self: start;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-bottom {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        text-align: center !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-community-icon {
+        align-self: center;
+        order: 0 !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-community-text,
+    html[dir="rtl"] .gem-testimonial-community-text h3,
+    html[dir="rtl"] .gem-testimonial-community-text p {
+        text-align: center !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-btn {
+        order: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+/* Mobile CTA and community text spacing */
+@media (max-width: 600px) {
+    .gem-connect-cta {
+        padding: 18px;
+    }
+
+    .gem-connect-cta-content {
+        padding: 0;
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+    .gem-connect-eyebrow {
+        justify-content: flex-start !important;
+        text-align: left !important;
+        gap: 9px;
+        margin-bottom: 18px;
+    }
+
+    .gem-connect-cta-content h2,
+    .gem-connect-cta-content h2 span,
+    .gem-connect-cta-content>p {
+        width: 100%;
+        text-align: left !important;
+    }
+
+    .gem-connect-cta-content h2 {
+        margin-bottom: 14px;
+        font-size: 31px;
+        line-height: 1.28;
+    }
+
+    .gem-connect-cta-content>p {
+        margin-bottom: 22px;
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .gem-testimonial-bottom {
+        align-items: stretch;
+        text-align: left !important;
+    }
+
+    .gem-testimonial-community-icon {
+        align-self: flex-start;
+    }
+
+    .gem-testimonial-community-text,
+    .gem-testimonial-community-text h3,
+    .gem-testimonial-community-text p {
+        width: 100%;
+        text-align: left !important;
+    }
+
+    .gem-testimonial-community-text h3 {
+        font-size: 22px;
+        line-height: 1.32;
+    }
+
+    .gem-testimonial-community-text p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    html[dir="rtl"] .gem-connect-cta-content,
+    html[dir="rtl"] .gem-connect-eyebrow,
+    html[dir="rtl"] .gem-connect-cta-content h2,
+    html[dir="rtl"] .gem-connect-cta-content h2 span,
+    html[dir="rtl"] .gem-connect-cta-content>p,
+    html[dir="rtl"] .gem-testimonial-community-text,
+    html[dir="rtl"] .gem-testimonial-community-text h3,
+    html[dir="rtl"] .gem-testimonial-community-text p {
+        text-align: left !important;
+    }
+
+    html[dir="rtl"] .gem-connect-cta-content {
+        align-items: flex-start !important;
+    }
+
+    html[dir="rtl"] .gem-connect-eyebrow {
+        justify-content: flex-start !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-bottom {
+        text-align: left !important;
+    }
+
+    html[dir="rtl"] .gem-testimonial-community-icon {
+        align-self: flex-start;
+    }
+}
+
+/* Stack product and about-page grids on mobile */
+@media (max-width: 600px) {
+
+    .gem-material-product-grid,
+    .gem-catalogue-grid,
+    .gem-about-special-features,
+    .gem-about-achievements-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .gem-material-product-grid .gem-material-product:last-child {
+        grid-column: auto !important;
+        justify-self: stretch !important;
+        width: 100% !important;
+    }
+
+    .gem-about-special-item {
+        min-height: 0;
+        padding: 22px 18px;
+    }
+
+    .gem-about-achievement-item {
+        min-height: 0;
+        padding: 25px 16px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(232, 205, 189, .35);
+    }
+
+    .gem-about-achievement-item:nth-child(2),
+    .gem-about-achievement-item:nth-child(3) {
+        border-bottom: 1px solid rgba(232, 205, 189, .35);
+    }
+
+    .gem-about-achievement-item:last-child {
+        border-bottom: 0;
+    }
+
+    html[dir="rtl"] .gem-about-achievement-item {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .gem-learning-image-note {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: fit-content;
+        max-width: 90%;
+        margin: 15px auto 0 !important;
+
+        transform: none !important;
+        align-self: center;
+    }
+
 }
