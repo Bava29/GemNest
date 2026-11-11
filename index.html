@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GemNest</title>
+
+    <meta name="description"
+        content="Discover beautiful beads, jewellery-making supplies, creative kits and hands-on workshops at GemNest.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="gem-header">
+
+        <div class="gem-header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="gem-logo">
+                <img src="images/logo.png" alt="GemNest Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="gem-desktop-nav">
+                <ul class="gem-nav-list">
+
+                    <li class="gem-nav-item gem-home-dropdown">
+                        <a href="#" class="gem-nav-link active">
+                            Home <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="gem-dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="about.html" class="gem-nav-link">About</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="products.html" class="gem-nav-link">Products</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="classes-workshops.html" class="gem-nav-link">
+                            Classes & Workshops
+                        </a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="custom-kits.html" class="gem-nav-link">Custom Kits</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="contact.html" class="gem-nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Right Actions -->
+            <div class="gem-header-actions">
+
+                <button class="gem-icon-btn" id="gem-desktop-theme" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="gem-icon-btn" id="gem-desktop-rtl" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="gem-login-btn">
+                    Login <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="gem-menu-toggle" id="gem-menu-toggle" aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="gem-mobile-menu" id="gem-mobile-menu">
+
+            <nav class="gem-mobile-nav">
+                <ul class="gem-mobile-nav-list">
+
+                    <li class="gem-mobile-home">
+
+                        <div class="gem-mobile-home-row">
+                            <a href="index.html">Home</a>
+
+                            <button class="gem-home-toggle" id="gem-home-toggle" aria-label="Toggle home submenu"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <ul class="gem-mobile-dropdown" id="gem-home-submenu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="products.html">Products</a></li>
+
+                    <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+
+                    <li><a href="custom-kits.html">Custom Kits</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Mobile Actions -->
+            <div class="gem-mobile-actions">
+
+                <div class="gem-mobile-settings">
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-rtl">
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>RTL Mode</span>
+                    </button>
+
+                </div>
+
+                <a href="login.html" class="gem-mobile-login">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+    <!-- ================= HERO SECTION START ================= -->
+
+    <section class="gem-hero">
+
+        <div class="gem-hero-container">
+
+            <!-- Hero Content -->
+            <div class="gem-hero-content">
+
+                <span class="gem-hero-subtitle">
+                    <span></span>
+                    WELCOME TO GEMNEST
+                    <span></span>
+                </span>
+
+                <h1>
+                    Create Beautiful
+                    <span>Jewellery & Crafts</span>
+                </h1>
+
+                <p>
+                    Explore a curated collection of beads, findings,
+                    and DIY kits for your next handmade creation.
+                    Let your imagination shine with every design.
+                </p>
+
+                <div class="gem-hero-buttons">
+
+                    <a href="products.html" class="gem-hero-primary-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Shop Supplies
+                    </a>
+
+                    <a href="classes-workshops.html" class="gem-hero-secondary-btn">
+                        <i class="fa-regular fa-calendar"></i>
+                        Join a Workshop
+                    </a>
+
+                </div>
+
+                <!-- Hero Highlights -->
+                <div class="gem-hero-highlights">
+
+                    <div class="gem-hero-highlight">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>Beautiful Beads</span>
+                    </div>
+
+                    <div class="gem-hero-highlight">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>Creative Supplies</span>
+                    </div>
+
+                    <div class="gem-hero-highlight">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Made With Love</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Hero Image -->
+            <div class="gem-hero-image">
+
+                <img src="images/hero-banner.jpg" alt="GemNest jewellery making beads, pearls and craft supplies">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= HERO SECTION END ================= -->
+
+    <!-- ================= COLLECTIONS SECTION START ================= -->
+
+    <section class="gem-collections">
+
+        <div class="gem-collections-container">
+
+            <!-- Section Heading -->
+            <div class="section-heading">
+
+                <span class="section-subtitle">Explore Our Collections</span>
+
+                <h2 class="section-title">
+                    Everything for Your
+                    <span>Creative Designs</span>
+                </h2>
+
+                <p class="section-description">
+                    Discover a beautiful selection of beads, findings and
+                    jewellery-making essentials to bring your creative ideas to life.
+                </p>
+
+            </div>
+
+
+            <!-- Collections Grid -->
+            <div class="gem-collections-grid">
+
+                <!-- Card 1 -->
+                <div class="gem-collection-card">
+
+                    <div class="gem-collection-image">
+                        <img src="images/gemstone-beads.jpg" alt="Gemstone Beads">
+
+                        <span class="gem-collection-number">01</span>
+                    </div>
+
+                    <div class="gem-collection-content">
+
+                        <span class="gem-collection-label">Natural Beauty</span>
+
+                        <h3>Gemstone Beads</h3>
+
+                        <p>
+                            Natural and semi-precious beads with
+                            timeless beauty and unique colours.
+                        </p>
+
+                        <a href="products.html" class="gem-collection-link">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="gem-collection-card">
+
+                    <div class="gem-collection-image">
+                        <img src="images/glass-beads.jpg" alt="Glass Beads">
+
+                        <span class="gem-collection-number">02</span>
+                    </div>
+
+                    <div class="gem-collection-content">
+
+                        <span class="gem-collection-label">Colourful Creations</span>
+
+                        <h3>Glass Beads</h3>
+
+                        <p>
+                            Vibrant colours and beautiful finishes
+                            for your creative jewellery projects.
+                        </p>
+
+                        <a href="products.html" class="gem-collection-link">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="gem-collection-card">
+
+                    <div class="gem-collection-image">
+                        <img src="images/pearl-beads.jpg" alt="Pearl Beads">
+
+                        <span class="gem-collection-number">03</span>
+                    </div>
+
+                    <div class="gem-collection-content">
+
+                        <span class="gem-collection-label">Classic Elegance</span>
+
+                        <h3>Pearl Beads</h3>
+
+                        <p>
+                            Classic and versatile pearls for
+                            timeless and elegant jewellery designs.
+                        </p>
+
+                        <a href="products.html" class="gem-collection-link">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="gem-collection-card">
+
+                    <div class="gem-collection-image">
+                        <img src="images/jewellery-findings.jpg" alt="Jewellery Findings">
+
+                        <span class="gem-collection-number">04</span>
+                    </div>
+
+                    <div class="gem-collection-content">
+
+                        <span class="gem-collection-label">Finishing Touches</span>
+
+                        <h3>Jewellery Findings</h3>
+
+                        <p>
+                            Discover clasps, jump rings, hooks and
+                            accessories to complete your designs.
+                        </p>
+
+                        <a href="products.html" class="gem-collection-link">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= COLLECTIONS SECTION END ================= -->
+
+    <!-- ================= ABOUT SECTION START ================= -->
+
+    <section class="gem-about">
+
+        <div class="gem-about-container">
+
+            <!-- About Images -->
+            <div class="gem-about-visual">
+
+                <div class="gem-about-main-image">
+                    <img src="images/about-workspace.jpg" alt="GemNest jewellery making workspace">
+                </div>
+
+                <div class="gem-about-small-image">
+                    <img src="images/about-beads.jpg" alt="Beautiful beads and jewellery supplies">
+                </div>
+
+                <div class="gem-about-badge">
+                    <i class="fa-regular fa-gem"></i>
+                    <span>Handmade<br>Creations</span>
+                </div>
+
+            </div>
+
+
+            <!-- About Content -->
+            <div class="gem-about-content">
+
+                <span class="gem-about-subtitle">
+                    <span></span>
+                    ABOUT GEMNEST
+                    <span></span>
+                </span>
+
+                <h2>
+                    A Creative Space for
+                    <span>Jewellery Makers</span>
+                </h2>
+
+                <p class="gem-about-description">
+                    GemNest is your one-stop destination for beautiful beads,
+                    unique findings and quality jewellery-making supplies.
+                    We believe every creative idea deserves the perfect materials
+                    to bring it to life.
+                </p>
+
+
+                <!-- About Features -->
+                <div class="gem-about-features">
+
+                    <div class="gem-about-feature">
+
+                        <div class="gem-about-feature-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <div>
+                            <h3>Premium Quality</h3>
+                            <p>Carefully sourced materials for lasting beauty.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gem-about-feature">
+
+                        <div class="gem-about-feature-icon">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+
+                        <div>
+                            <h3>Wide Variety</h3>
+                            <p>From beautiful beads to findings, all in one place.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gem-about-feature">
+
+                        <div class="gem-about-feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <div>
+                            <h3>Creative Community</h3>
+                            <p>Learn, create and grow with fellow makers.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <a href="about.html" class="gem-about-btn">
+                    Know More About Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT SECTION END ================= -->
+
+    <!-- ================= FEATURED PRODUCTS START ================= -->
+
+    <section class="gem-featured">
+
+        <div class="gem-featured-container">
+
+            <!-- Section Heading -->
+            <div class="section-heading">
+
+                <span class="section-subtitle">Featured Products</span>
+
+                <h2 class="section-title">
+                    Our <span>Bestselling</span> Supplies
+                </h2>
+
+                <p class="section-description">
+                    Handpicked beads, findings and jewellery-making essentials
+                    to inspire your next beautiful creation.
+                </p>
+
+            </div>
+
+
+            <!-- Product Category Filters -->
+            <div class="gem-product-filters">
+
+                <button class="gem-filter-btn active">All</button>
+                <button class="gem-filter-btn">Beads</button>
+                <button class="gem-filter-btn">Pearls</button>
+                <button class="gem-filter-btn">Charms</button>
+                <button class="gem-filter-btn">Findings</button>
+                <button class="gem-filter-btn">Kits</button>
+
+            </div>
+
+
+            <!-- Products Grid -->
+            <div class="gem-featured-grid">
+
+                <!-- Product 1 -->
+                <div class="gem-product-card">
+
+                    <div class="gem-product-image">
+
+                        <img src="images/featured-1.jpg" alt="Natural Gemstone Beads">
+
+                        <span class="gem-product-tag">Bestseller</span>
+
+                        <button class="gem-wishlist-btn" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="gem-product-content">
+
+                        <span class="gem-product-category">Gemstone Collection</span>
+
+                        <h3>Gemstone Beads</h3>
+
+                        <p>
+                            Beautiful natural gemstone beads for
+                            unique handmade jewellery.
+                        </p>
+
+                        <div class="gem-product-rating">
+                            <span>★★★★★</span>
+                            <small>(24 Reviews)</small>
+                        </div>
+
+                        <div class="gem-product-bottom">
+
+                            <div class="gem-product-price">
+                                <strong>₹299</strong>
+                                <del>₹399</del>
+                            </div>
+
+                            <button class="gem-cart-btn">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="gem-product-card">
+
+                    <div class="gem-product-image">
+
+                        <img src="images/featured-2.jpg" alt="Colourful Glass Beads">
+
+                        <span class="gem-product-tag">Popular</span>
+
+                        <button class="gem-wishlist-btn" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="gem-product-content">
+
+                        <span class="gem-product-category">Glass Collection</span>
+
+                        <h3>Colourful Glass Beads</h3>
+
+                        <p>
+                            Vibrant glass beads in beautiful colours
+                            for creative jewellery projects.
+                        </p>
+
+                        <div class="gem-product-rating">
+                            <span>★★★★★</span>
+                            <small>(18 Reviews)</small>
+                        </div>
+
+                        <div class="gem-product-bottom">
+
+                            <div class="gem-product-price">
+                                <strong>₹199</strong>
+                                <del>₹249</del>
+                            </div>
+
+                            <button class="gem-cart-btn">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 3 -->
+                <div class="gem-product-card">
+
+                    <div class="gem-product-image">
+
+                        <img src="images/featured-3.jpg" alt="Premium Pearl Beads">
+
+                        <span class="gem-product-tag">New Arrival</span>
+
+                        <button class="gem-wishlist-btn" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="gem-product-content">
+
+                        <span class="gem-product-category">Pearl Collection</span>
+
+                        <h3>Premium Pearl Beads</h3>
+
+                        <p>
+                            Elegant pearl beads to create timeless
+                            and sophisticated jewellery.
+                        </p>
+
+                        <div class="gem-product-rating">
+                            <span>★★★★★</span>
+                            <small>(32 Reviews)</small>
+                        </div>
+
+                        <div class="gem-product-bottom">
+
+                            <div class="gem-product-price">
+                                <strong>₹349</strong>
+                                <del>₹449</del>
+                            </div>
+
+                            <button class="gem-cart-btn">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="gem-product-card">
+
+                    <div class="gem-product-image">
+
+                        <img src="images/featured-4.jpg" alt="Gold Jewellery Findings">
+
+                        <span class="gem-product-tag">Trending</span>
+
+                        <button class="gem-wishlist-btn" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="gem-product-content">
+
+                        <span class="gem-product-category">Accessories</span>
+
+                        <h3>Gold Findings</h3>
+
+                        <p>
+                            Quality clasps, hooks and jump rings
+                            for perfectly finished creations.
+                        </p>
+
+                        <div class="gem-product-rating">
+                            <span>★★★★★</span>
+                            <small>(21 Reviews)</small>
+                        </div>
+
+                        <div class="gem-product-bottom">
+
+                            <div class="gem-product-price">
+                                <strong>₹249</strong>
+                                <del>₹299</del>
+                            </div>
+
+                            <button class="gem-cart-btn">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- View All Button -->
+            <div class="gem-featured-footer">
+
+                <a href="products.html" class="gem-view-products-btn">
+                    View All Products
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURED PRODUCTS END ================= -->
+
+    <!-- ================= DIY KITS SECTION START ================= -->
+
+    <section class="gem-diy-kits">
+
+        <div class="gem-diy-container">
+
+            <!-- Section Heading -->
+            <div class="section-heading">
+
+                <span class="section-subtitle">Made For Creative Minds</span>
+
+                <h2 class="section-title">
+                    Creative DIY Kits for <span>Every Maker</span>
+                </h2>
+
+                <p class="section-description">
+                    Everything you need to create beautiful handmade jewellery,
+                    thoughtfully packed into one creative kit.
+                </p>
+
+            </div>
+
+
+            <!-- DIY Kit Layout -->
+            <div class="gem-diy-layout">
+
+                <!-- Left Feature Image -->
+                <div class="gem-diy-showcase">
+
+                    <img src="images/diy-kit-main.jpg" alt="GemNest DIY jewellery making kit">
+
+                    <div class="gem-diy-round-badge">
+                        <i class="fa-solid fa-gift"></i>
+                        <span>Make<br>Create<br>Gift</span>
+                    </div>
+
+                    <div class="gem-diy-image-caption">
+                        <span>YOUR CREATIVE JOURNEY</span>
+                        <h3>Everything Starts With An Idea.</h3>
+                    </div>
+
+                </div>
+
+
+                <!-- Right Content -->
+                <div class="gem-diy-products">
+
+                    <!-- Benefits -->
+                    <div class="gem-diy-benefits">
+
+                        <div class="gem-diy-benefit">
+                            <i class="fa-regular fa-gem"></i>
+                            <span>All-in-One<br>Materials</span>
+                        </div>
+
+                        <div class="gem-diy-benefit">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Step-by-Step<br>Guide</span>
+                        </div>
+
+                        <div class="gem-diy-benefit">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>Beginner<br>Friendly</span>
+                        </div>
+
+                        <div class="gem-diy-benefit">
+                            <i class="fa-solid fa-gift"></i>
+                            <span>Perfect<br>for Gifting</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Kit Cards -->
+                    <div class="gem-diy-grid">
+
+                        <!-- Bracelet Kit -->
+                        <div class="gem-diy-card">
+
+                            <div class="gem-diy-card-image">
+                                <img src="images/diy-kit-1.jpg" alt="Bracelet Making Kit">
+                            </div>
+
+                            <div class="gem-diy-card-content">
+
+                                <span>CREATE YOUR STYLE</span>
+
+                                <h3>Bracelet Making Kit</h3>
+
+                                <p>
+                                    Create beautiful beaded bracelets
+                                    with a curated kit.
+                                </p>
+
+                                <div class="gem-diy-price">₹699</div>
+
+                                <button class="gem-diy-cart-btn">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Necklace Kit -->
+                        <div class="gem-diy-card">
+
+                            <div class="gem-diy-card-image">
+                                <img src="images/diy-kit-2.jpg" alt="Necklace Making Kit">
+                            </div>
+
+                            <div class="gem-diy-card-content">
+
+                                <span>DESIGN SOMETHING SPECIAL</span>
+
+                                <h3>Necklace Making Kit</h3>
+
+                                <p>
+                                    Design elegant necklaces with
+                                    premium beads and findings.
+                                </p>
+
+                                <div class="gem-diy-price">₹899</div>
+
+                                <button class="gem-diy-cart-btn">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Earrings Kit -->
+                        <div class="gem-diy-card">
+
+                            <div class="gem-diy-card-image">
+                                <img src="images/diy-kit-3.jpg" alt="Earrings Making Kit">
+                            </div>
+
+                            <div class="gem-diy-card-content">
+
+                                <span>MAKE IT YOURS</span>
+
+                                <h3>Earrings Making Kit</h3>
+
+                                <p>
+                                    Make stylish handmade earrings
+                                    with easy-to-follow steps.
+                                </p>
+
+                                <div class="gem-diy-price">₹599</div>
+
+                                <button class="gem-diy-cart-btn">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- View All -->
+            <div class="gem-diy-footer">
+
+                <a href="custom-kits.html" class="gem-diy-view-btn">
+                    Explore All DIY Kits
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DIY KITS SECTION END ================= -->
+
+    <!-- ================= WHY CHOOSE GEMNEST START ================= -->
+
+    <section class="gem-why">
+
+        <div class="gem-why-container">
+
+            <!-- Left Content -->
+            <div class="gem-why-intro">
+
+                <span class="gem-why-eyebrow">
+                    <i class="fa-regular fa-gem"></i>
+                    THE GEMNEST DIFFERENCE
+                </span>
+
+                <h2>
+                    Every Beautiful Creation
+                    <span>Begins Here.</span>
+                </h2>
+
+                <p>
+                    From your very first bracelet to your most detailed
+                    jewellery design, GemNest brings together beautiful
+                    materials, creative inspiration and everything you
+                    need to make something truly yours.
+                </p>
+
+                <div class="gem-why-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <span>
+                        Little beads, endless possibilities.
+                        Your creativity makes every piece special.
+                    </span>
+                </div>
+
+                <a href="about.html" class="gem-why-btn">
+                    Discover Our Story
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Right Benefits -->
+            <div class="gem-why-benefits">
+
+                <div class="gem-why-item">
+                    <span class="gem-why-number">01</span>
+
+                    <div class="gem-why-icon">
+                        <i class="fa-regular fa-gem"></i>
+                    </div>
+
+                    <div class="gem-why-item-content">
+                        <h3>Thoughtfully Selected Materials</h3>
+                        <p>
+                            Explore beautiful beads, findings and
+                            essentials selected to inspire every design.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gem-why-item">
+                    <span class="gem-why-number">02</span>
+
+                    <div class="gem-why-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <div class="gem-why-item-content">
+                        <h3>Creativity Without Limits</h3>
+                        <p>
+                            Mix colours, explore textures and create
+                            jewellery that reflects your personal style.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gem-why-item">
+                    <span class="gem-why-number">03</span>
+
+                    <div class="gem-why-icon">
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                    </div>
+
+                    <div class="gem-why-item-content">
+                        <h3>Made for Every Skill Level</h3>
+                        <p>
+                            Whether you're a beginner or an experienced
+                            maker, find supplies suited to your journey.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gem-why-item">
+                    <span class="gem-why-number">04</span>
+
+                    <div class="gem-why-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="gem-why-item-content">
+                        <h3>Learn, Make & Grow</h3>
+                        <p>
+                            Discover workshops and creative kits
+                            that help you develop new jewellery-making skills.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WHY CHOOSE GEMNEST END ================= -->
+
+    <!-- ================= TESTIMONIALS SECTION START ================= -->
+
+    <section class="gem-testimonials">
+
+        <div class="gem-testimonials-container">
+
+            <!-- Section Heading -->
+            <div class="section-heading">
+
+                <span class="section-subtitle">Words From Our Makers</span>
+
+                <h2 class="section-title">
+                    Stories That <span>Inspire Us</span>
+                </h2>
+
+                <p class="section-description">
+                    Every creation has a story. Discover what our creative
+                    community says about their GemNest experience.
+                </p>
+
+            </div>
+
+
+            <!-- Testimonial Layout -->
+            <div class="gem-testimonial-layout">
+
+                <!-- Featured Review -->
+                <div class="gem-testimonial-featured">
+
+                    <div class="gem-testimonial-quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <div class="gem-testimonial-rating">
+                        ★★★★★
+                    </div>
+
+                    <blockquote>
+                        "I absolutely love the beautiful collection at
+                        GemNest! The beads are lovely, the variety is
+                        amazing, and every purchase inspires me to create
+                        something new."
+                    </blockquote>
+
+                    <div class="gem-testimonial-author">
+
+                        <img src="images/customer-1.jpg" alt="Customer portrait">
+
+                        <div>
+                            <h3>Priya Sharma</h3>
+                            <span>Jewellery Making Enthusiast</span>
+                        </div>
+
+                        <div class="gem-testimonial-verified">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Customer</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Side Reviews -->
+                <div class="gem-testimonial-list">
+
+                    <!-- Review 2 -->
+                    <div class="gem-testimonial-card">
+
+                        <div class="gem-testimonial-card-top">
+                            <div class="gem-testimonial-rating">★★★★★</div>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+
+                        <p>
+                            "The DIY bracelet kit was such a wonderful
+                            experience! Everything was neatly organised
+                            and easy to use. Perfect for beginners."
+                        </p>
+
+                        <div class="gem-testimonial-card-author">
+
+                            <img src="images/customer-2.jpg" alt="Customer portrait">
+
+                            <div>
+                                <h3>Ananya R.</h3>
+                                <span>DIY Kit Customer</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Review 3 -->
+                    <div class="gem-testimonial-card">
+
+                        <div class="gem-testimonial-card-top">
+                            <div class="gem-testimonial-rating">★★★★★</div>
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+
+                        <p>
+                            "I joined a jewellery-making workshop and
+                            enjoyed every moment. It was creative,
+                            informative and so much fun!"
+                        </p>
+
+                        <div class="gem-testimonial-card-author">
+
+                            <img src="images/customer-3.jpg" alt="Customer portrait">
+
+                            <div>
+                                <h3>Meera K.</h3>
+                                <span>Workshop Participant</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Community Highlight -->
+            <div class="gem-testimonial-bottom">
+
+                <div class="gem-testimonial-community-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="gem-testimonial-community-text">
+                    <h3>Made With Creativity, Shared With Love.</h3>
+                    <p>
+                        Become part of the GemNest creative community
+                        and share your handmade creations.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="gem-testimonial-btn">
+                    Join Our Community
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TESTIMONIALS SECTION END ================= -->
+
+    <!-- ================= CTA & NEWSLETTER START ================= -->
+
+    <section class="gem-connect">
+
+        <div class="gem-connect-container">
+
+            <!-- CTA Banner -->
+            <div class="gem-connect-cta">
+
+                <div class="gem-connect-cta-content">
+
+                    <span class="gem-connect-eyebrow">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        YOUR NEXT CREATION STARTS HERE
+                    </span>
+
+                    <h2>
+                        Turn Your Creative Ideas
+                        <span>Into Something Beautiful.</span>
+                    </h2>
+
+                    <p>
+                        Find your favourite beads, explore creative kits
+                        and discover everything you need to make jewellery
+                        that is uniquely yours.
+                    </p>
+
+                    <div class="gem-connect-buttons">
+
+                        <a href="products.html" class="gem-connect-primary-btn">
+                            Explore Collections
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="custom-kits.html" class="gem-connect-outline-btn">
+                            Create Your Own Kit
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="gem-connect-cta-image">
+
+                    <img src="images/cta-creative.jpg" alt="Beautiful handmade jewellery and creative supplies">
+
+                    <div class="gem-connect-image-note">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Made by you, loved by everyone.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Newsletter Section -->
+            <div class="gem-newsletter">
+
+                <div class="gem-newsletter-content">
+
+                    <span class="gem-newsletter-label">
+                        <i class="fa-regular fa-envelope"></i>
+                        A LITTLE INSPIRATION IN YOUR INBOX
+                    </span>
+
+                    <h2>
+                        Stay Inspired with
+                        <span>GemNest.</span>
+                    </h2>
+
+                    <p>
+                        Subscribe to receive creative ideas, new arrivals,
+                        workshop updates and special offers straight to your inbox.
+                    </p>
+
+                    <form class="gem-newsletter-form" id="gem-newsletter-form">
+
+                        <div class="gem-newsletter-input-wrap">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input type="email" id="gem-newsletter-email" placeholder="Enter your email address"
+                                aria-label="Email address" required>
+
+                        </div>
+
+                        <button type="submit" class="gem-newsletter-btn">
+                            Subscribe Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </form>
+
+                    <p class="gem-newsletter-note">
+                        <i class="fa-solid fa-lock"></i>
+                        Your email is safe with us. No spam, just creativity.
+                    </p>
+
+                    <p class="gem-newsletter-message" id="gem-newsletter-message" aria-live="polite"></p>
+
+                </div>
+
+                <div class="gem-newsletter-decoration">
+
+                    <div class="gem-newsletter-circle">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>CREATE</span>
+                        <span>INSPIRE</span>
+                        <span>REPEAT</span>
+                    </div>
+
+                    <span class="gem-newsletter-sparkle sparkle-one">✦</span>
+                    <span class="gem-newsletter-sparkle sparkle-two">✧</span>
+                    <span class="gem-newsletter-sparkle sparkle-three">✦</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA & NEWSLETTER END ================= -->
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="gem-footer">
+
+        <div class="gem-footer-main">
+
+            <div class="gem-footer-container">
+
+                <!-- Brand Column -->
+                <div class="gem-footer-brand">
+
+                    <a href="index.html" class="gem-footer-logo">
+                        <img src="images/logo.png" alt="GemNest Logo">
+                    </a>
+
+                    <p>
+                        Bring your creative jewellery ideas to life with
+                        beautiful beads, unique findings and thoughtfully
+                        curated jewellery-making supplies.
+                    </p>
+
+                    <div class="gem-footer-social">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="gem-footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+                        <li><a href="custom-kits.html">Custom Kits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Product Categories -->
+                <div class="gem-footer-links">
+
+                    <h3>Our Collections</h3>
+
+                    <ul>
+                        <li><a href="products.html">Gemstone Beads</a></li>
+                        <li><a href="products.html">Glass Beads</a></li>
+                        <li><a href="products.html">Pearl Beads</a></li>
+                        <li><a href="products.html">Jewellery Findings</a></li>
+                        <li><a href="products.html">Charms & Pendants</a></li>
+                        <li><a href="custom-kits.html">DIY Craft Kits</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="gem-footer-contact">
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+                        Have a creative idea or need help choosing
+                        your jewellery supplies? We'd love to hear from you.
+                    </p>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:hello@gemnest.com">
+                            hello@gemnest.com
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="gem-footer-bottom">
+
+            <div class="gem-footer-bottom-container">
+
+                <p>
+                    © 2026 GemNest. All Rights Reserved.
+                </p>
+
+                <div class="gem-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="gem-footer-credit">
+                    Crafted with <i class="fa-solid fa-heart"></i> for Creators
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

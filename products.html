@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GemNest</title>
+
+    <meta name="description"
+        content="Discover beautiful beads, jewellery-making supplies, creative kits and hands-on workshops at GemNest.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="gem-header">
+
+        <div class="gem-header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="gem-logo">
+                <img src="images/logo.png" alt="GemNest Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="gem-desktop-nav">
+                <ul class="gem-nav-list">
+
+                    <li class="gem-nav-item gem-home-dropdown">
+                        <a href="#" class="gem-nav-link">
+                            Home <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="gem-dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="about.html" class="gem-nav-link">About</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="products.html" class="gem-nav-link active">Products</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="classes-workshops.html" class="gem-nav-link">
+                            Classes & Workshops
+                        </a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="custom-kits.html" class="gem-nav-link">Custom Kits</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="contact.html" class="gem-nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Right Actions -->
+            <div class="gem-header-actions">
+
+                <button class="gem-icon-btn" id="gem-desktop-theme" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="gem-icon-btn" id="gem-desktop-rtl" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="gem-login-btn">
+                    Login <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="gem-menu-toggle" id="gem-menu-toggle" aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="gem-mobile-menu" id="gem-mobile-menu">
+
+            <nav class="gem-mobile-nav">
+                <ul class="gem-mobile-nav-list">
+
+                    <li class="gem-mobile-home">
+
+                        <div class="gem-mobile-home-row">
+                            <a href="index.html">Home</a>
+
+                            <button class="gem-home-toggle" id="gem-home-toggle" aria-label="Toggle home submenu"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <ul class="gem-mobile-dropdown" id="gem-home-submenu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="products.html">Products</a></li>
+
+                    <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+
+                    <li><a href="custom-kits.html">Custom Kits</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Mobile Actions -->
+            <div class="gem-mobile-actions">
+
+                <div class="gem-mobile-settings">
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-rtl">
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>RTL Mode</span>
+                    </button>
+
+                </div>
+
+                <a href="login.html" class="gem-mobile-login">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+    <!-- ================= COMMON PAGE HERO START ================= -->
+
+    <section class="gem-inner-hero products-banner">
+
+        <div class="gem-inner-hero-overlay"></div>
+
+        <div class="gem-inner-hero-content">
+
+            <span class="gem-inner-hero-subtitle">
+                <span></span>
+                EXPLORE OUR COLLECTION
+                <span></span>
+            </span>
+
+            <h1>Discover <em>Creative Essentials</em></h1>
+
+            <p>
+                Beautiful beads, delicate charms and jewellery-making essentials to bring every creative idea to life.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="gem-material-shop">
+        <div class="gem-material-container">
+
+            <!-- Section Heading -->
+            <div class="gem-material-heading">
+                <span class="gem-material-eyebrow">
+                    <span></span> FIND YOUR PERFECT MATERIAL <span></span>
+                </span>
+                <h2>Shop by <em>Material</em></h2>
+                <p>
+                    Explore our carefully selected jewellery-making materials
+                    and find the perfect elements for your next creation.
+                </p>
+            </div>
+
+            <div class="gem-material-layout">
+
+                <!-- Advanced Filter Sidebar -->
+                <aside class="gem-material-sidebar">
+
+                    <div class="gem-material-filter-header">
+                        <div>
+                            <i class="fa-solid fa-sliders"></i>
+                            <h3>Filters</h3>
+                        </div>
+                        <button type="button" id="gemMaterialClear">Clear All</button>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="gem-material-filter-group">
+                        <label for="gemMaterialSearch">Search Materials</label>
+                        <div class="gem-material-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="gemMaterialSearch" placeholder="Search products...">
+                        </div>
+                    </div>
+
+                    <div class="gem-material-filter-divider"></div>
+
+                    <!-- Material Type -->
+                    <div class="gem-material-filter-group">
+                        <div class="gem-material-filter-title">
+                            <h4>Material Type</h4>
+                            <span>01</span>
+                        </div>
+
+                        <label class="gem-material-check">
+                            <input type="checkbox" name="gemMaterialType" value="Glass Beads">
+                            <span class="gem-material-custom-check"></span>
+                            Glass Beads <small>(24)</small>
+                        </label>
+
+                        <label class="gem-material-check">
+                            <input type="checkbox" name="gemMaterialType" value="Gemstone Beads">
+                            <span class="gem-material-custom-check"></span>
+                            Gemstone Beads <small>(18)</small>
+                        </label>
+
+                        <label class="gem-material-check">
+                            <input type="checkbox" name="gemMaterialType" value="Pearl Beads">
+                            <span class="gem-material-custom-check"></span>
+                            Pearl Beads <small>(16)</small>
+                        </label>
+
+                        <label class="gem-material-check">
+                            <input type="checkbox" name="gemMaterialType" value="Acrylic Beads">
+                            <span class="gem-material-custom-check"></span>
+                            Acrylic Beads <small>(12)</small>
+                        </label>
+
+                        <label class="gem-material-check">
+                            <input type="checkbox" name="gemMaterialType" value="Metal Findings">
+                            <span class="gem-material-custom-check"></span>
+                            Metal Findings <small>(20)</small>
+                        </label>
+
+                        <label class="gem-material-check">
+                            <input type="checkbox" name="gemMaterialType" value="Crystal Beads">
+                            <span class="gem-material-custom-check"></span>
+                            Crystal Beads <small>(14)</small>
+                        </label>
+                    </div>
+
+                    <div class="gem-material-filter-divider"></div>
+
+                    <!-- Colour -->
+                    <div class="gem-material-filter-group">
+                        <div class="gem-material-filter-title">
+                            <h4>Colour</h4>
+                            <span>02</span>
+                        </div>
+
+                        <div class="gem-material-colours">
+                            <label title="White">
+                                <input type="checkbox" name="gemMaterialColour" value="White">
+                                <span class="gem-colour-dot gem-colour-white"></span>
+                            </label>
+
+                            <label title="Pink">
+                                <input type="checkbox" name="gemMaterialColour" value="Pink">
+                                <span class="gem-colour-dot gem-colour-pink"></span>
+                            </label>
+
+                            <label title="Gold">
+                                <input type="checkbox" name="gemMaterialColour" value="Gold">
+                                <span class="gem-colour-dot gem-colour-gold"></span>
+                            </label>
+
+                            <label title="Blue">
+                                <input type="checkbox" name="gemMaterialColour" value="Blue">
+                                <span class="gem-colour-dot gem-colour-blue"></span>
+                            </label>
+
+                            <label title="Green">
+                                <input type="checkbox" name="gemMaterialColour" value="Green">
+                                <span class="gem-colour-dot gem-colour-green"></span>
+                            </label>
+
+                            <label title="Purple">
+                                <input type="checkbox" name="gemMaterialColour" value="Purple">
+                                <span class="gem-colour-dot gem-colour-purple"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="gem-material-filter-divider"></div>
+
+                    <!-- Price Range -->
+                    <div class="gem-material-filter-group">
+                        <div class="gem-material-filter-title">
+                            <h4>Price Range</h4>
+                            <span>03</span>
+                        </div>
+
+                        <div class="gem-material-price-values">
+                            <span>₹100</span>
+                            <strong id="gemMaterialPriceValue">₹2,000</strong>
+                        </div>
+
+                        <input type="range" id="gemMaterialPrice" min="100" max="2000" step="50" value="2000">
+
+                        <div class="gem-material-price-labels">
+                            <span>₹100</span>
+                            <span>₹2,000+</span>
+                        </div>
+                    </div>
+
+                    <div class="gem-material-filter-divider"></div>
+
+                    <!-- Availability -->
+                    <div class="gem-material-filter-group">
+                        <div class="gem-material-filter-title">
+                            <h4>Availability</h4>
+                            <span>04</span>
+                        </div>
+
+                        <label class="gem-material-check">
+                            <input type="checkbox" id="gemMaterialStock">
+                            <span class="gem-material-custom-check"></span>
+                            In Stock Only
+                        </label>
+                    </div>
+
+                    <button type="button" class="gem-material-apply" id="gemMaterialApply">
+                        Apply Filters
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </aside>
+
+                <!-- Product Area -->
+                <div class="gem-material-products">
+
+                    <div class="gem-material-toolbar">
+                        <div>
+                            <span class="gem-material-results-label">OUR MATERIAL COLLECTION</span>
+                            <h3><span id="gemMaterialCount">6</span> Products Found</h3>
+                        </div>
+
+                        <div class="gem-material-sort">
+                            <label for="gemMaterialSort">Sort by</label>
+                            <select id="gemMaterialSort">
+                                <option value="featured">Featured</option>
+                                <option value="low">Price: Low to High</option>
+                                <option value="high">Price: High to Low</option>
+                                <option value="name">Name: A to Z</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Active Filters -->
+                    <div class="gem-material-active-filters" id="gemMaterialActiveFilters"></div>
+
+                    <!-- Product Grid -->
+                    <div class="gem-material-product-grid" id="gemMaterialProductGrid">
+
+                        <article class="gem-material-product" data-name="Pastel Glass Bead Set"
+                            data-material="Glass Beads" data-colour="Pink" data-price="299" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-1.jpg" alt="Pastel Glass Bead Set">
+                                <span class="gem-material-product-badge">BESTSELLER</span>
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>GLASS BEADS</span>
+                                <h4>Pastel Glass Bead Set</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹299</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="gem-material-product" data-name="Natural Rose Quartz Beads"
+                            data-material="Gemstone Beads" data-colour="Pink" data-price="549" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-2.jpg" alt="Rose Quartz Beads">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>GEMSTONE BEADS</span>
+                                <h4>Natural Rose Quartz Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹549</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="gem-material-product" data-name="Classic Freshwater Pearls"
+                            data-material="Pearl Beads" data-colour="White" data-price="799" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-3.jpg" alt="Freshwater Pearl Beads">
+                                <span class="gem-material-product-badge">POPULAR</span>
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>PEARL BEADS</span>
+                                <h4>Classic Freshwater Pearls</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹799</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="gem-material-product" data-name="Colour Pop Acrylic Beads"
+                            data-material="Acrylic Beads" data-colour="Blue" data-price="199" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-4.jpg" alt="Acrylic Beads">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>ACRYLIC BEADS</span>
+                                <h4>Colour Pop Acrylic Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹199</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="gem-material-product" data-name="Gold Tone Jewellery Findings"
+                            data-material="Metal Findings" data-colour="Gold" data-price="399" data-stock="no">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-5.jpg" alt="Gold Tone Findings">
+                                <span class="gem-material-product-badge">NEW</span>
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>METAL FINDINGS</span>
+                                <h4>Gold Tone Jewellery Findings</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹399</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="gem-material-product" data-name="Sparkling Crystal Beads"
+                            data-material="Crystal Beads" data-colour="Purple" data-price="649" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-6.jpg" alt="Crystal Beads">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>CRYSTAL BEADS</span>
+                                <h4>Sparkling Crystal Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹649</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 7 -->
+                        <article class="gem-material-product" data-name="Lavender Amethyst Beads"
+                            data-material="Gemstone Beads" data-colour="Purple" data-price="699" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-7.jpg" alt="Lavender Amethyst Beads">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>GEMSTONE BEADS</span>
+                                <h4>Lavender Amethyst Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹699</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 8 -->
+                        <article class="gem-material-product" data-name="Mini Gold Spacer Beads"
+                            data-material="Metal Findings" data-colour="Gold" data-price="249" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-8.jpg" alt="Gold Spacer Beads">
+                                <span class="gem-material-product-badge">POPULAR</span>
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>METAL FINDINGS</span>
+                                <h4>Mini Gold Spacer Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹249</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 9 -->
+                        <article class="gem-material-product" data-name="Ocean Blue Glass Beads"
+                            data-material="Glass Beads" data-colour="Blue" data-price="349" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-9.jpg" alt="Ocean Blue Glass Beads">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>GLASS BEADS</span>
+                                <h4>Ocean Blue Glass Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹349</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 10 -->
+                        <article class="gem-material-product" data-name="Ivory Round Pearl Beads"
+                            data-material="Pearl Beads" data-colour="White" data-price="459" data-stock="no">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-10.jpg" alt="Ivory Pearl Beads">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>PEARL BEADS</span>
+                                <h4>Ivory Round Pearl Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹459</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 11 -->
+                        <article class="gem-material-product" data-name="Pastel Rainbow Acrylic Beads"
+                            data-material="Acrylic Beads" data-colour="Pink" data-price="179" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-11.jpg" alt="Pastel Rainbow Acrylic Beads">
+                                <span class="gem-material-product-badge">NEW</span>
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>ACRYLIC BEADS</span>
+                                <h4>Pastel Rainbow Acrylic Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹179</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 12 -->
+                        <article class="gem-material-product" data-name="Clear AB Crystal Beads"
+                            data-material="Crystal Beads" data-colour="White" data-price="899" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-12.jpg" alt="Clear AB Crystal Beads">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>CRYSTAL BEADS</span>
+                                <h4>Clear AB Crystal Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹899</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 13 -->
+                        <article class="gem-material-product" data-name="Emerald Green Gemstone Beads"
+                            data-material="Gemstone Beads" data-colour="Green" data-price="749" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-13.jpg" alt="Emerald Green Gemstone Beads">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>GEMSTONE BEADS</span>
+                                <h4>Emerald Green Gemstone Beads</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹749</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 14 -->
+                        <article class="gem-material-product" data-name="Rose Gold Jump Rings"
+                            data-material="Metal Findings" data-colour="Pink" data-price="299" data-stock="yes">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-14.jpg" alt="Rose Gold Jump Rings">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>METAL FINDINGS</span>
+                                <h4>Rose Gold Jump Rings</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹299</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product 15 -->
+                        <article class="gem-material-product" data-name="Sapphire Blue Crystal Mix"
+                            data-material="Crystal Beads" data-colour="Blue" data-price="599" data-stock="no">
+                            <div class="gem-material-product-image">
+                                <img src="images/material-15.jpg" alt="Sapphire Blue Crystal Mix">
+                                <button type="button" class="gem-material-wishlist" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="gem-material-product-info">
+                                <span>CRYSTAL BEADS</span>
+                                <h4>Sapphire Blue Crystal Mix</h4>
+                                <div class="gem-material-product-bottom">
+                                    <strong>₹599</strong>
+                                    <button type="button" aria-label="View product">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="gem-material-empty" id="gemMaterialEmpty" hidden>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h3>No Products Found</h3>
+                        <p>Try changing your filters to discover more materials.</p>
+                        <button type="button" id="gemMaterialEmptyClear">Clear Filters</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gem-category-showcase">
+        <div class="gem-category-container">
+
+            <div class="gem-category-top">
+                <div>
+                    <span class="gem-category-eyebrow">
+                        <span></span> FIND YOUR CREATIVE STYLE
+                    </span>
+                    <h2>Explore Our <em>Categories</em></h2>
+                </div>
+
+                <p>
+                    From delicate little details to statement-making
+                    elements, discover the essentials for every creation.
+                </p>
+            </div>
+
+            <div class="gem-category-featured">
+
+                <!-- Large Featured Category -->
+                <a href="products.html?category=beads" class="gem-category-large">
+                    <img src="images/category-beads.jpg" alt="Beads and Spacers">
+
+                    <div class="gem-category-image-overlay"></div>
+
+                    <div class="gem-category-content">
+                        <span>01 / THE ESSENTIALS</span>
+                        <h3>Beads &amp; Spacers</h3>
+                        <p>Build beautiful designs, one bead at a time.</p>
+                        <span class="gem-category-explore">
+                            EXPLORE CATEGORY
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Right Side Categories -->
+                <div class="gem-category-side">
+
+                    <a href="products.html?category=charms" class="gem-category-small">
+                        <img src="images/category-charms.jpg" alt="Charms and Pendants">
+                        <div class="gem-category-image-overlay"></div>
+
+                        <div class="gem-category-content">
+                            <span>02 / LITTLE DETAILS</span>
+                            <h3>Charms &amp; Pendants</h3>
+                            <span class="gem-category-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="products.html?category=chains" class="gem-category-small">
+                        <img src="images/category-chains.jpg" alt="Chains and Cords">
+                        <div class="gem-category-image-overlay"></div>
+
+                        <div class="gem-category-content">
+                            <span>03 / CONNECT YOUR IDEAS</span>
+                            <h3>Chains &amp; Cords</h3>
+                            <span class="gem-category-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Bottom Category Strip -->
+            <div class="gem-category-bottom">
+
+                <a href="products.html?category=findings" class="gem-category-strip-item">
+                    <div class="gem-category-strip-icon">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                    <div>
+                        <span>04 / FINISHING TOUCHES</span>
+                        <h4>Jewellery Findings</h4>
+                    </div>
+                    <i class="fa-solid fa-arrow-right gem-category-strip-arrow"></i>
+                </a>
+
+                <a href="products.html?category=tools" class="gem-category-strip-item">
+                    <div class="gem-category-strip-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <div>
+                        <span>05 / CREATE WITH EASE</span>
+                        <h4>Tools &amp; Accessories</h4>
+                    </div>
+                    <i class="fa-solid fa-arrow-right gem-category-strip-arrow"></i>
+                </a>
+
+                <a href="products.html?category=kits" class="gem-category-strip-item">
+                    <div class="gem-category-strip-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div>
+                        <span>06 / READY TO CREATE</span>
+                        <h4>DIY Jewellery Kits</h4>
+                    </div>
+                    <i class="fa-solid fa-arrow-right gem-category-strip-arrow"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gem-all-products" id="all-products">
+        <div class="gem-catalogue-container">
+
+            <div class="gem-catalogue-heading">
+                <span class="gem-catalogue-subtitle">THE GEMNEST COLLECTION</span>
+                <h2>Explore All Products</h2>
+                <p>Find everything you need to bring your jewellery-making ideas to life.</p>
+            </div>
+
+            <!-- Toolbar -->
+            <div class="gem-catalogue-toolbar">
+
+                <div class="gem-catalogue-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="gemProductSearch" placeholder="Search products...">
+                </div>
+
+                <select id="gemCategoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="beads">Beads & Spacers</option>
+                    <option value="charms">Charms & Pendants</option>
+                    <option value="chains">Chains & Cords</option>
+                    <option value="findings">Jewellery Findings</option>
+                    <option value="tools">Tools & Accessories</option>
+                    <option value="kits">DIY Jewellery Kits</option>
+                </select>
+
+                <select id="gemColourFilter">
+                    <option value="all">All Colours</option>
+                    <option value="white">White</option>
+                    <option value="pink">Pink</option>
+                    <option value="gold">Gold</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="silver">Silver</option>
+                    <option value="multi">Multicolour</option>
+                </select>
+
+                <select id="gemSortFilter">
+                    <option value="featured">Featured</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+
+            </div>
+
+            <!-- Active Filters -->
+            <div class="gem-catalogue-active">
+                <div id="gemActiveFilters">
+                    <span>Showing all categories</span>
+                </div>
+
+                <button type="button" id="gemClearFilters">
+                    Clear Filters <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Product Count -->
+            <div class="gem-catalogue-results">
+                <p><span id="gemProductCount">23</span> products found</p>
+            </div>
+
+            <!-- Products -->
+            <div class="gem-catalogue-grid" id="gemCatalogueGrid">
+
+                <!-- BEADS & SPACERS -->
+
+                <article class="gem-catalogue-card" data-name="Pastel Glass Bead Set" data-price="299"
+                    data-category="beads" data-colour="pink">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p1.jpg" alt="Pastel Glass Bead Set">
+                        <span class="gem-product-tag">Popular</span>
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Pastel Glass Bead Set</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹299</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Natural Rose Quartz Beads" data-price="549"
+                    data-category="beads" data-colour="pink">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p2.jpg" alt="Rose Quartz Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Natural Rose Quartz Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹549</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Classic Freshwater Pearls" data-price="799"
+                    data-category="beads" data-colour="white">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p3.jpg" alt="Freshwater Pearls">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Classic Freshwater Pearls</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹799</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Colour Pop Acrylic Beads" data-price="199"
+                    data-category="beads" data-colour="blue">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p4.jpg" alt="Acrylic Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Colour Pop Acrylic Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹199</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Sparkling Crystal Beads" data-price="649"
+                    data-category="beads" data-colour="purple">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p5.jpg" alt="Crystal Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Sparkling Crystal Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹649</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Lavender Amethyst Beads" data-price="699"
+                    data-category="beads" data-colour="purple">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p6.jpg" alt="Amethyst Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Lavender Amethyst Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹699</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Ocean Blue Glass Beads" data-price="349"
+                    data-category="beads" data-colour="blue">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p7.jpg" alt="Blue Glass Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Ocean Blue Glass Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹349</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Emerald Green Gemstone Beads" data-price="749"
+                    data-category="beads" data-colour="green">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p8.jpg" alt="Green Gemstone Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Emerald Green Gemstone Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹749</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Mini Gold Spacer Beads" data-price="249"
+                    data-category="beads" data-colour="gold">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p9.jpg" alt="Gold Spacer Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Mini Gold Spacer Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹249</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Ivory Round Pearl Beads" data-price="459"
+                    data-category="beads" data-colour="white">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p10.jpg" alt="Ivory Pearl Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Ivory Round Pearl Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹459</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Pastel Rainbow Acrylic Beads" data-price="179"
+                    data-category="beads" data-colour="multi">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p11.jpg" alt="Rainbow Acrylic Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Pastel Rainbow Acrylic Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹179</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Clear AB Crystal Beads" data-price="899"
+                    data-category="beads" data-colour="white">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p12.jpg" alt="AB Crystal Beads">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Beads & Spacers</span>
+                        <h3>Clear AB Crystal Beads</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹899</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CHARMS & PENDANTS -->
+
+                <article class="gem-catalogue-card" data-name="Golden Heart Charm Set" data-price="349"
+                    data-category="charms" data-colour="gold">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p13.jpg" alt="Golden Heart Charms">
+                        <span class="gem-product-tag">New</span>
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Charms & Pendants</span>
+                        <h3>Golden Heart Charm Set</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹349</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Floral Pendant Collection" data-price="499"
+                    data-category="charms" data-colour="pink">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p14.jpg" alt="Floral Pendants">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Charms & Pendants</span>
+                        <h3>Floral Pendant Collection</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹499</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CHAINS & CORDS -->
+
+                <article class="gem-catalogue-card" data-name="Gold Plated Necklace Chain" data-price="399"
+                    data-category="chains" data-colour="gold">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p15.jpg" alt="Gold Necklace Chain">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Chains & Cords</span>
+                        <h3>Gold Plated Necklace Chain</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹399</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Soft Cotton Jewellery Cord" data-price="199"
+                    data-category="chains" data-colour="pink">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p16.jpg" alt="Cotton Jewellery Cord">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Chains & Cords</span>
+                        <h3>Soft Cotton Jewellery Cord</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹199</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- JEWELLERY FINDINGS -->
+
+                <article class="gem-catalogue-card" data-name="Gold Tone Jewellery Findings" data-price="399"
+                    data-category="findings" data-colour="gold">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p17.jpg" alt="Jewellery Findings">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Jewellery Findings</span>
+                        <h3>Gold Tone Jewellery Findings</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹399</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Rose Gold Jump Rings" data-price="299"
+                    data-category="findings" data-colour="pink">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p18.jpg" alt="Rose Gold Jump Rings">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Jewellery Findings</span>
+                        <h3>Rose Gold Jump Rings</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹299</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TOOLS & ACCESSORIES -->
+
+                <article class="gem-catalogue-card" data-name="Precision Jewellery Pliers" data-price="449"
+                    data-category="tools" data-colour="gold">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p19.jpg" alt="Jewellery Pliers">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Tools & Accessories</span>
+                        <h3>Precision Jewellery Pliers</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹449</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Beading Needle Tool Set" data-price="249"
+                    data-category="tools" data-colour="silver">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p20.jpg" alt="Beading Needle Tools">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>Tools & Accessories</span>
+                        <h3>Beading Needle Tool Set</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹249</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DIY JEWELLERY KITS -->
+
+                <article class="gem-catalogue-card" data-name="Beginner Bracelet Making Kit" data-price="699"
+                    data-category="kits" data-colour="multi">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p21.jpg" alt="Bracelet Making Kit">
+                        <span class="gem-product-tag">Best Seller</span>
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>DIY Jewellery Kits</span>
+                        <h3>Beginner Bracelet Making Kit</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹699</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Creative Jewellery Starter Kit" data-price="999"
+                    data-category="kits" data-colour="pink">
+                    <div class="gem-catalogue-image">
+                        <img src="images/p22.jpg" alt="Jewellery Starter Kit">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="gem-catalogue-info">
+                        <span>DIY Jewellery Kits</span>
+                        <h3>Creative Jewellery Starter Kit</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹999</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Rose Gold Butterfly Charms" data-price="399"
+                    data-category="charms" data-colour="pink">
+
+                    <div class="gem-catalogue-image">
+                        <img src="images/p23.jpg" alt="Rose Gold Butterfly Charms">
+                        <span class="gem-product-tag">New</span>
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="gem-catalogue-info">
+                        <span>Charms & Pendants</span>
+                        <h3>Rose Gold Butterfly Charms</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹399</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gem-catalogue-card" data-name="Silver Beading Wire Roll" data-price="299"
+                    data-category="chains" data-colour="silver">
+
+                    <div class="gem-catalogue-image">
+                        <img src="images/p24.jpg" alt="Silver Beading Wire Roll">
+                        <button class="gem-wishlist" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="gem-catalogue-info">
+                        <span>Chains & Cords</span>
+                        <h3>Silver Beading Wire Roll</h3>
+                        <div class="gem-product-bottom">
+                            <strong>₹299</strong>
+                            <button class="gem-add-cart">Add to Cart <i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Empty State -->
+            <div class="gem-catalogue-empty" id="gemCatalogueEmpty">
+                <i class="fa-regular fa-face-frown"></i>
+                <h3>No Products Found</h3>
+                <p>Try changing your search or filter options.</p>
+                <button type="button" id="gemEmptyClear">View All Products</button>
+            </div>
+
+            <!-- Pagination -->
+            <div class="gem-catalogue-pagination" id="gemPagination">
+                <button type="button" id="gemPrevPage" aria-label="Previous page">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div id="gemPageNumbers"></div>
+                <button type="button" id="gemNextPage" aria-label="Next page">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+     SECTION 5 - CURATED COLLECTIONS
+===================================== -->
+
+    <section class="gem-curated-section">
+
+        <div class="gem-curated-container">
+
+            <!-- Section Heading -->
+            <div class="gem-curated-heading">
+
+                <div>
+                    <span class="gem-curated-subtitle">
+                        THOUGHTFULLY SELECTED FOR YOU
+                    </span>
+
+                    <h2>Curated Collections</h2>
+                </div>
+
+                <p>
+                    Explore thoughtfully selected collections designed
+                    to inspire your next beautiful jewellery creation.
+                </p>
+
+            </div>
+
+
+            <!-- Collection Layout -->
+            <div class="gem-curated-layout">
+
+                <!-- Featured Collection -->
+                <div class="gem-curated-feature">
+
+                    <div class="gem-curated-feature-image">
+                        <img src="images/collection-featured.jpg" alt="The Pearl Edit Collection">
+
+                        <span class="gem-curated-feature-label">
+                            FEATURED COLLECTION
+                        </span>
+                    </div>
+
+                    <div class="gem-curated-feature-content">
+
+                        <div>
+                            <span class="gem-curated-number">01 / FEATURED</span>
+
+                            <h3>The Pearl Edit</h3>
+
+                            <p>
+                                Discover timeless pearl beads, delicate
+                                accents and elegant essentials for creating
+                                jewellery with effortless charm.
+                            </p>
+                        </div>
+
+                        <a href="products.html?collection=pearls" class="gem-curated-feature-link">
+                            Explore Collection
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Collection List -->
+                <div class="gem-curated-list">
+
+                    <!-- Collection 02 -->
+                    <article class="gem-curated-item">
+
+                        <div class="gem-curated-item-image">
+                            <img src="images/collection-gemstone.jpg" alt="Gemstone Stories">
+                        </div>
+
+                        <div class="gem-curated-item-content">
+
+                            <span class="gem-curated-number">02 / NATURAL BEAUTY</span>
+
+                            <h3>Gemstone Stories</h3>
+
+                            <p>
+                                Bring natural colours and textures into
+                                every handmade creation.
+                            </p>
+
+                            <a href="products.html?collection=gemstones">
+                                Discover Collection
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Collection 03 -->
+                    <article class="gem-curated-item">
+
+                        <div class="gem-curated-item-image">
+                            <img src="images/collection-golden.jpg" alt="Golden Details">
+                        </div>
+
+                        <div class="gem-curated-item-content">
+
+                            <span class="gem-curated-number">03 / TIMELESS DETAILS</span>
+
+                            <h3>Golden Details</h3>
+
+                            <p>
+                                Add a refined finishing touch with
+                                beautiful gold-tone jewellery essentials.
+                            </p>
+
+                            <a href="products.html?collection=gold">
+                                Discover Collection
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Collection 04 -->
+                    <article class="gem-curated-item">
+
+                        <div class="gem-curated-item-image">
+                            <img src="images/collection-pastel.jpg" alt="Pastel Dreams">
+                        </div>
+
+                        <div class="gem-curated-item-content">
+
+                            <span class="gem-curated-number">04 / SOFT COLOURS</span>
+
+                            <h3>Pastel Dreams</h3>
+
+                            <p>
+                                Create playful and delicate designs
+                                with a beautiful pastel colour palette.
+                            </p>
+
+                            <a href="products.html?collection=pastel">
+                                Discover Collection
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     SECTION 6 - CREATIVE CTA
+===================================== -->
+
+    <section class="gem-creative-cta">
+
+        <div class="gem-creative-cta-overlay"></div>
+
+        <div class="gem-creative-cta-content">
+
+            <span class="gem-creative-cta-label">
+                YOUR NEXT CREATION STARTS HERE
+            </span>
+
+            <h2>
+                Imagine It. Create It.
+                <span>Make It Yours.</span>
+            </h2>
+
+            <p>
+                Every beautiful piece begins with a little inspiration.
+                Find your favourite materials and turn your creative
+                ideas into something truly special.
+            </p>
+
+            <div class="gem-creative-cta-buttons">
+
+                <a href="products.html" class="gem-cta-primary">
+                    Explore All Products
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="contact.html" class="gem-cta-secondary">
+                    Get In Touch
+                </a>
+
+            </div>
+
+            <div class="gem-creative-cta-bottom">
+                <span></span>
+                <p>CREATE SOMETHING BEAUTIFUL WITH GEMNEST</p>
+                <span></span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="gem-footer">
+
+        <div class="gem-footer-main">
+
+            <div class="gem-footer-container">
+
+                <!-- Brand Column -->
+                <div class="gem-footer-brand">
+
+                    <a href="index.html" class="gem-footer-logo">
+                        <img src="images/logo.png" alt="GemNest Logo">
+                    </a>
+
+                    <p>
+                        Bring your creative jewellery ideas to life with
+                        beautiful beads, unique findings and thoughtfully
+                        curated jewellery-making supplies.
+                    </p>
+
+                    <div class="gem-footer-social">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="gem-footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+                        <li><a href="custom-kits.html">Custom Kits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Product Categories -->
+                <div class="gem-footer-links">
+
+                    <h3>Our Collections</h3>
+
+                    <ul>
+                        <li><a href="products.html">Gemstone Beads</a></li>
+                        <li><a href="products.html">Glass Beads</a></li>
+                        <li><a href="products.html">Pearl Beads</a></li>
+                        <li><a href="products.html">Jewellery Findings</a></li>
+                        <li><a href="products.html">Charms & Pendants</a></li>
+                        <li><a href="custom-kits.html">DIY Craft Kits</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="gem-footer-contact">
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+                        Have a creative idea or need help choosing
+                        your jewellery supplies? We'd love to hear from you.
+                    </p>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:hello@gemnest.com">
+                            hello@gemnest.com
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="gem-footer-bottom">
+
+            <div class="gem-footer-bottom-container">
+
+                <p>
+                    © 2026 GemNest. All Rights Reserved.
+                </p>
+
+                <div class="gem-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="gem-footer-credit">
+                    Crafted with <i class="fa-solid fa-heart"></i> for Creators
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

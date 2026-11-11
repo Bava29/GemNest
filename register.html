@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your GemNest account and join our creative community.">
+    <title>GemNest</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body class="gem-auth-page">
+    <div class="gem-auth-shell">
+        <header class="gem-auth-toolbar" aria-label="Display preferences">
+            <button class="gem-auth-preference" type="button" data-gem-auth-theme aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+            <button class="gem-auth-preference" type="button" data-gem-auth-rtl aria-label="Toggle RTL mode">
+                <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+            </button>
+        </header>
+
+        <main class="gem-auth-main">
+            <section class="gem-auth-card gem-auth-card-register" aria-labelledby="gem-auth-title">
+                <a class="gem-auth-logo" href="index.html" aria-label="GemNest home">
+                    <img src="images/logo.png" alt="GemNest">
+                </a>
+                <h1 id="gem-auth-title">Create Your GemNest Account</h1>
+                <p class="gem-auth-description">Join our creative community and start making something beautiful.</p>
+
+                <form class="gem-auth-form" id="gem-auth-form" novalidate>
+                    <label class="gem-auth-label" for="gem-auth-name">Full Name</label>
+                    <div class="gem-auth-field">
+                        <i class="gem-auth-field-icon fa-regular fa-user" aria-hidden="true"></i>
+                        <input id="gem-auth-name" name="name" type="text" placeholder="Enter your full name"
+                            autocomplete="name" required>
+                    </div>
+
+                    <label class="gem-auth-label" for="gem-auth-email">Email Address</label>
+                    <div class="gem-auth-field">
+                        <i class="gem-auth-field-icon fa-regular fa-envelope" aria-hidden="true"></i>
+                        <input id="gem-auth-email" name="email" type="email" placeholder="Enter your email address"
+                            autocomplete="email" required>
+                    </div>
+
+                    <label class="gem-auth-label" for="gem-auth-phone">Phone Number</label>
+                    <div class="gem-auth-field">
+                        <i class="gem-auth-field-icon fa-solid fa-phone" aria-hidden="true"></i>
+                        <input id="gem-auth-phone" name="phone" type="tel" placeholder="Enter your phone number"
+                            autocomplete="tel" pattern="[0-9+() -]{7,20}" title="Enter a valid phone number" required>
+                    </div>
+
+                    <label class="gem-auth-label" for="gem-auth-password">Password</label>
+                    <div class="gem-auth-field">
+                        <i class="gem-auth-field-icon fa-solid fa-lock" aria-hidden="true"></i>
+                        <input id="gem-auth-password" name="password" type="password" placeholder="Create a password"
+                            autocomplete="new-password" minlength="8" required>
+                        <button class="gem-auth-eye" type="button" data-gem-auth-password="gem-auth-password"
+                            aria-label="Show password" aria-pressed="false">
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <label class="gem-auth-label" for="gem-auth-confirm-password">Confirm Password</label>
+                    <div class="gem-auth-field">
+                        <i class="gem-auth-field-icon fa-solid fa-lock" aria-hidden="true"></i>
+                        <input id="gem-auth-confirm-password" name="confirmPassword" type="password"
+                            placeholder="Confirm your password" autocomplete="new-password" required>
+                        <button class="gem-auth-eye" type="button" data-gem-auth-password="gem-auth-confirm-password"
+                            aria-label="Show password" aria-pressed="false">
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <label class="gem-auth-check gem-auth-terms">
+                        <input type="checkbox" name="terms" required>
+                        <span>I agree to the <a href="#terms" data-gem-auth-info="Terms &amp; Conditions">Terms &amp;
+                                Conditions</a> and <a href="#privacy" data-gem-auth-info="Privacy Policy">Privacy
+                                Policy</a>.</span>
+                    </label>
+
+                    <button class="gem-auth-submit" type="submit">Create Account <i class="fa-solid fa-arrow-right"
+                            aria-hidden="true"></i></button>
+                    <p class="gem-auth-feedback" id="gem-auth-feedback" role="status" aria-live="polite"></p>
+                </form>
+
+                <div class="gem-auth-divider"><span>OR CONTINUE WITH</span></div>
+                <div class="gem-auth-socials" aria-label="Social sign-in options">
+                    <button class="gem-auth-social" type="button" data-gem-auth-social="Facebook"
+                        aria-label="Continue with Facebook"><i class="fa-brands fa-facebook-f gem-auth-facebook"
+                            aria-hidden="true"></i><span>Facebook</span></button>
+                    <button class="gem-auth-social" type="button" data-gem-auth-social="Apple"
+                        aria-label="Continue with Apple"><i class="fa-brands fa-apple gem-auth-apple"
+                            aria-hidden="true"></i><span>Apple</span></button>
+                    <button class="gem-auth-social" type="button" data-gem-auth-social="Google"
+                        aria-label="Continue with Google"><img src="images/google-logo.svg"
+                            alt=""><span>Google</span></button>
+                </div>
+
+                <p class="gem-auth-switch">Already have an account? <a href="login.html">Login</a></p>
+
+            </section>
+        </main>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

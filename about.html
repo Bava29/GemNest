@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GemNest</title>
+
+    <meta name="description"
+        content="Discover beautiful beads, jewellery-making supplies, creative kits and hands-on workshops at GemNest.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="gem-header">
+
+        <div class="gem-header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="gem-logo">
+                <img src="images/logo.png" alt="GemNest Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="gem-desktop-nav">
+                <ul class="gem-nav-list">
+
+                    <li class="gem-nav-item gem-home-dropdown">
+                        <a href="#" class="gem-nav-link">
+                            Home <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="gem-dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="about.html" class="gem-nav-link active">About</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="products.html" class="gem-nav-link">Products</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="classes-workshops.html" class="gem-nav-link">
+                            Classes & Workshops
+                        </a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="custom-kits.html" class="gem-nav-link">Custom Kits</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="contact.html" class="gem-nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Right Actions -->
+            <div class="gem-header-actions">
+
+                <button class="gem-icon-btn" id="gem-desktop-theme" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="gem-icon-btn" id="gem-desktop-rtl" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="gem-login-btn">
+                    Login <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="gem-menu-toggle" id="gem-menu-toggle" aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="gem-mobile-menu" id="gem-mobile-menu">
+
+            <nav class="gem-mobile-nav">
+                <ul class="gem-mobile-nav-list">
+
+                    <li class="gem-mobile-home">
+
+                        <div class="gem-mobile-home-row">
+                            <a href="index.html">Home</a>
+
+                            <button class="gem-home-toggle" id="gem-home-toggle" aria-label="Toggle home submenu"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <ul class="gem-mobile-dropdown" id="gem-home-submenu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="products.html">Products</a></li>
+
+                    <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+
+                    <li><a href="custom-kits.html">Custom Kits</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Mobile Actions -->
+            <div class="gem-mobile-actions">
+
+                <div class="gem-mobile-settings">
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-rtl">
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>RTL Mode</span>
+                    </button>
+
+                </div>
+
+                <a href="login.html" class="gem-mobile-login">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+    <!-- ================= COMMON PAGE HERO START ================= -->
+
+    <section class="gem-inner-hero about-banner">
+
+        <div class="gem-inner-hero-overlay"></div>
+
+        <div class="gem-inner-hero-content">
+
+            <span class="gem-inner-hero-subtitle">
+                <span></span>
+                THE WORLD OF GEMNEST
+                <span></span>
+            </span>
+
+            <h1>About <em>Us</em></h1>
+
+            <p>
+                Discover the passion, creativity and craftsmanship
+                behind every little detail at GemNest.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= COMMON PAGE HERO END ================= -->
+
+    <section class="gem-about-story">
+        <div class="gem-about-story-container">
+
+            <div class="gem-about-story-image">
+                <img src="images/our-story.jpg" alt="GemNest Jewellery Making Materials">
+                <div class="gem-about-story-image-label">
+                    <span>OUR JOURNEY</span>
+                    <strong>Made with passion</strong>
+                </div>
+            </div>
+
+            <div class="gem-about-story-content">
+                <span class="gem-about-story-tag">
+                    <span></span> A LITTLE ABOUT US
+                </span>
+
+                <h2>
+                    Every Little Detail
+                    <em>Has a Story</em>
+                </h2>
+
+                <p class="gem-about-story-intro">
+                    At GemNest, we believe that creativity begins with the
+                    smallest details. Every bead, charm and finding holds
+                    the possibility of becoming something beautiful.
+                </p>
+
+                <p class="gem-about-story-description">
+                    What started as a love for handmade creations grew into
+                    a space where jewellery makers, DIY enthusiasts and
+                    creative minds can find materials that inspire them.
+                    We bring together thoughtfully selected supplies to
+                    make every creative journey more meaningful.
+                </p>
+
+                <div class="gem-about-story-divider"></div>
+
+                <div class="gem-about-story-highlight">
+                    <div class="gem-about-story-highlight-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div>
+                        <h4>Creativity in Every Detail</h4>
+                        <p>Helping your imagination turn into something uniquely yours.</p>
+                    </div>
+                </div>
+
+                <a href="products.html" class="gem-about-story-btn">
+                    Explore Our Collection
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gem-about-purpose">
+        <div class="gem-about-purpose-container">
+
+            <div class="gem-about-purpose-heading">
+                <span class="gem-about-purpose-tag">
+                    <span></span> WHAT DRIVES US <span></span>
+                </span>
+                <h2>Purpose Behind <em>Every Creation</em></h2>
+                <p>
+                    More than just jewellery supplies, we are here to make
+                    creativity accessible and inspire beautiful handmade stories.
+                </p>
+            </div>
+
+            <div class="gem-about-purpose-cards">
+
+                <!-- Mission Card -->
+                <div class="gem-about-purpose-card gem-purpose-mission">
+                    <div class="gem-about-purpose-card-top">
+                        <span class="gem-about-purpose-number">01</span>
+                        <div class="gem-about-purpose-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                    </div>
+
+                    <span class="gem-about-purpose-label">OUR MISSION</span>
+
+                    <h3>Inspiring Creativity, One Detail at a Time</h3>
+
+                    <p>
+                        Our mission is to provide thoughtfully selected,
+                        quality jewellery-making materials that empower
+                        everyone to explore their creativity and bring
+                        their ideas to life.
+                    </p>
+
+                    <div class="gem-about-purpose-bottom">
+                        <span>CREATE WITH CONFIDENCE</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Vision Card -->
+                <div class="gem-about-purpose-card gem-purpose-vision">
+                    <div class="gem-about-purpose-card-top">
+                        <span class="gem-about-purpose-number">02</span>
+                        <div class="gem-about-purpose-icon">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <span class="gem-about-purpose-label">OUR VISION</span>
+
+                    <h3>A Creative World Without Limits</h3>
+
+                    <p>
+                        We envision a creative community where every maker
+                        feels inspired, supported and confident to turn
+                        simple materials into meaningful creations.
+                    </p>
+
+                    <div class="gem-about-purpose-bottom">
+                        <span>IMAGINE WITHOUT LIMITS</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="gem-about-special">
+        <div class="gem-about-special-container">
+
+            <div class="gem-about-special-heading">
+                <span class="gem-about-special-tag">
+                    <span></span> THE GEMNEST DIFFERENCE
+                </span>
+
+                <h2>
+                    Little Things That
+                    Make Us <em>Special</em>
+                </h2>
+
+                <p>
+                    We bring together everything you need to make your
+                    jewellery-making experience inspiring, enjoyable
+                    and uniquely yours.
+                </p>
+
+                <div class="gem-about-special-note">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Thoughtfully chosen. Creatively delivered.</span>
+                </div>
+            </div>
+
+            <div class="gem-about-special-features">
+
+                <div class="gem-about-special-item">
+                    <span class="gem-about-special-number">01</span>
+                    <div class="gem-about-special-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3>Curated Quality</h3>
+                    <p>
+                        Carefully selected beads, charms and jewellery
+                        essentials for your creative projects.
+                    </p>
+                </div>
+
+                <div class="gem-about-special-item">
+                    <span class="gem-about-special-number">02</span>
+                    <div class="gem-about-special-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>Endless Inspiration</h3>
+                    <p>
+                        Explore beautiful materials and fresh ideas
+                        that encourage you to create something new.
+                    </p>
+                </div>
+
+                <div class="gem-about-special-item">
+                    <span class="gem-about-special-number">03</span>
+                    <div class="gem-about-special-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3>Creative Variety</h3>
+                    <p>
+                        Discover a variety of supplies to match
+                        different styles, ideas and handmade projects.
+                    </p>
+                </div>
+
+                <div class="gem-about-special-item">
+                    <span class="gem-about-special-number">04</span>
+                    <div class="gem-about-special-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Made for Creators</h3>
+                    <p>
+                        A welcoming creative space for beginners,
+                        hobbyists and passionate jewellery makers.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="gem-about-achievements">
+        <div class="gem-about-achievements-container">
+
+            <div class="gem-about-achievements-heading">
+                <span class="gem-about-achievements-tag">
+                    <span></span> OUR JOURNEY IN NUMBERS <span></span>
+                </span>
+
+                <h2>Small Details, <em>Big Milestones</em></h2>
+
+                <p>
+                    Every milestone represents the creativity, trust and
+                    inspiration that continue to shape the GemNest journey.
+                </p>
+            </div>
+
+            <div class="gem-about-achievements-grid">
+
+                <div class="gem-about-achievement-item">
+                    <div class="gem-about-achievement-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3><span class="gem-achievement-count" data-target="500">0</span><span>+</span></h3>
+                    <p>Creative Products</p>
+                    <small>Materials for every imagination</small>
+                </div>
+
+                <div class="gem-about-achievement-item">
+                    <div class="gem-about-achievement-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3><span class="gem-achievement-count" data-target="2500">0</span><span>+</span></h3>
+                    <p>Happy Creators</p>
+                    <small>A community built on creativity</small>
+                </div>
+
+                <div class="gem-about-achievement-item">
+                    <div class="gem-about-achievement-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3><span class="gem-achievement-count" data-target="120">0</span><span>+</span></h3>
+                    <p>Creative Possibilities</p>
+                    <small>Ideas waiting to come alive</small>
+                </div>
+
+                <div class="gem-about-achievement-item">
+                    <div class="gem-about-achievement-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3><span class="gem-achievement-count" data-target="100">0</span><span>%</span></h3>
+                    <p>Passion for Creativity</p>
+                    <small>In every little detail</small>
+                </div>
+
+            </div>
+
+            <div class="gem-about-achievements-bottom">
+                <span></span>
+                <p>Every number tells a story. Every creation makes it special.</p>
+                <span></span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gem-about-process">
+        <div class="gem-about-process-container">
+
+            <div class="gem-about-process-heading">
+                <span class="gem-about-process-tag">
+                    <span></span> FROM IDEA TO CREATION <span></span>
+                </span>
+
+                <h2>How We Make Creativity <em>Happen</em></h2>
+
+                <p>
+                    Every creative journey begins with an idea.
+                    We make it easier to turn that idea into something beautiful.
+                </p>
+            </div>
+
+            <div class="gem-about-process-timeline">
+
+                <div class="gem-about-process-line"></div>
+
+                <div class="gem-about-process-step">
+                    <div class="gem-about-process-step-top">
+                        <span class="gem-about-process-count">01</span>
+                        <div class="gem-about-process-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                    </div>
+
+                    <h3>Find Your Inspiration</h3>
+                    <p>
+                        Start with an idea, a colour combination or a design
+                        that sparks your imagination.
+                    </p>
+
+                    <span class="gem-about-process-caption">DREAM IT</span>
+                </div>
+
+                <div class="gem-about-process-step">
+                    <div class="gem-about-process-step-top">
+                        <span class="gem-about-process-count">02</span>
+                        <div class="gem-about-process-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                    </div>
+
+                    <h3>Choose Your Materials</h3>
+                    <p>
+                        Explore beads, charms and essential findings
+                        that bring your creative vision together.
+                    </p>
+
+                    <span class="gem-about-process-caption">PICK YOUR PIECES</span>
+                </div>
+
+                <div class="gem-about-process-step">
+                    <div class="gem-about-process-step-top">
+                        <span class="gem-about-process-count">03</span>
+                        <div class="gem-about-process-icon">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                    </div>
+
+                    <h3>Create with Passion</h3>
+                    <p>
+                        Mix, match and experiment with your materials
+                        to create something that reflects your style.
+                    </p>
+
+                    <span class="gem-about-process-caption">MAKE IT YOURS</span>
+                </div>
+
+                <div class="gem-about-process-step">
+                    <div class="gem-about-process-step-top">
+                        <span class="gem-about-process-count">04</span>
+                        <div class="gem-about-process-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <h3>Celebrate Your Creation</h3>
+                    <p>
+                        Enjoy the finished piece and share the beauty
+                        of something made with your own hands.
+                    </p>
+
+                    <span class="gem-about-process-caption">SHARE THE JOY</span>
+                </div>
+
+            </div>
+
+            <div class="gem-about-process-footer">
+                <p>Every masterpiece starts with one little idea.</p>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gem-about-team">
+        <div class="gem-about-team-container">
+
+            <div class="gem-about-team-heading">
+                <div>
+                    <span class="gem-about-team-tag">
+                        <span></span> THE PEOPLE BEHIND GEMNEST
+                    </span>
+                    <h2>Meet the Minds Behind <em>Our Magic</em></h2>
+                </div>
+
+                <p>
+                    A passionate team bringing creativity, care and
+                    thoughtful details into everything we do.
+                </p>
+            </div>
+
+            <div class="gem-about-team-grid">
+
+                <!-- Team Member 1 -->
+                <div class="gem-about-team-card">
+                    <div class="gem-about-team-image">
+                        <img src="images/team-1.jpg" alt="GemNest Founder">
+                        <div class="gem-about-team-socials">
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gem-about-team-info">
+                        <span>01 / LEADERSHIP</span>
+                        <h3>Olivia Bennett</h3>
+                        <p>Founder & Creative Director</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="gem-about-team-card">
+                    <div class="gem-about-team-image">
+                        <img src="images/team-2.jpg" alt="GemNest Design Team Member">
+                        <div class="gem-about-team-socials">
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gem-about-team-info">
+                        <span>02 / DESIGN</span>
+                        <h3>Amelia Rose</h3>
+                        <p>Product & Design Specialist</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="gem-about-team-card">
+                    <div class="gem-about-team-image">
+                        <img src="images/team-3.jpg" alt="GemNest Customer Experience Team Member">
+                        <div class="gem-about-team-socials">
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gem-about-team-info">
+                        <span>03 / CUSTOMER CARE</span>
+                        <h3>Isabella Grace</h3>
+                        <p>Customer Experience Manager</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gem-about-cta">
+        <div class="gem-about-cta-overlay"></div>
+
+        <div class="gem-about-cta-content">
+
+            <span class="gem-about-cta-tag">
+                <span></span> YOUR CREATIVE JOURNEY STARTS HERE <span></span>
+            </span>
+
+            <h2>
+                Turn Your Ideas Into
+                <em>Something Beautiful</em>
+            </h2>
+
+            <p>
+                Discover beautiful jewellery-making materials and let
+                your imagination create something truly unique.
+            </p>
+
+            <div class="gem-about-cta-buttons">
+                <a href="products.html" class="gem-about-cta-primary">
+                    Explore Our Products
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="contact.html" class="gem-about-cta-secondary">
+                    Get In Touch
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+
+            <div class="gem-about-cta-bottom">
+                <span></span>
+                <p>CREATE · INSPIRE · SHINE</p>
+                <span></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="gem-footer">
+
+        <div class="gem-footer-main">
+
+            <div class="gem-footer-container">
+
+                <!-- Brand Column -->
+                <div class="gem-footer-brand">
+
+                    <a href="index.html" class="gem-footer-logo">
+                        <img src="images/logo.png" alt="GemNest Logo">
+                    </a>
+
+                    <p>
+                        Bring your creative jewellery ideas to life with
+                        beautiful beads, unique findings and thoughtfully
+                        curated jewellery-making supplies.
+                    </p>
+
+                    <div class="gem-footer-social">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="gem-footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+                        <li><a href="custom-kits.html">Custom Kits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Product Categories -->
+                <div class="gem-footer-links">
+
+                    <h3>Our Collections</h3>
+
+                    <ul>
+                        <li><a href="products.html">Gemstone Beads</a></li>
+                        <li><a href="products.html">Glass Beads</a></li>
+                        <li><a href="products.html">Pearl Beads</a></li>
+                        <li><a href="products.html">Jewellery Findings</a></li>
+                        <li><a href="products.html">Charms & Pendants</a></li>
+                        <li><a href="custom-kits.html">DIY Craft Kits</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="gem-footer-contact">
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+                        Have a creative idea or need help choosing
+                        your jewellery supplies? We'd love to hear from you.
+                    </p>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:hello@gemnest.com">
+                            hello@gemnest.com
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="gem-footer-bottom">
+
+            <div class="gem-footer-bottom-container">
+
+                <p>
+                    © 2026 GemNest. All Rights Reserved.
+                </p>
+
+                <div class="gem-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="gem-footer-credit">
+                    Crafted with <i class="fa-solid fa-heart"></i> for Creators
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

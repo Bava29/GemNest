@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GemNest</title>
+
+    <meta name="description"
+        content="Discover beautiful beads, jewellery-making supplies, creative kits and hands-on workshops at GemNest.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="gem-header">
+
+        <div class="gem-header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="gem-logo">
+                <img src="images/logo.png" alt="GemNest Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="gem-desktop-nav">
+                <ul class="gem-nav-list">
+
+                    <li class="gem-nav-item gem-home-dropdown">
+                        <a href="#" class="gem-nav-link">
+                            Home <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="gem-dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="about.html" class="gem-nav-link">About</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="products.html" class="gem-nav-link">Products</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="classes-workshops.html" class="gem-nav-link active">
+                            Classes & Workshops
+                        </a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="custom-kits.html" class="gem-nav-link">Custom Kits</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="contact.html" class="gem-nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Right Actions -->
+            <div class="gem-header-actions">
+
+                <button class="gem-icon-btn" id="gem-desktop-theme" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="gem-icon-btn" id="gem-desktop-rtl" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="gem-login-btn">
+                    Login <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="gem-menu-toggle" id="gem-menu-toggle" aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="gem-mobile-menu" id="gem-mobile-menu">
+
+            <nav class="gem-mobile-nav">
+                <ul class="gem-mobile-nav-list">
+
+                    <li class="gem-mobile-home">
+
+                        <div class="gem-mobile-home-row">
+                            <a href="index.html">Home</a>
+
+                            <button class="gem-home-toggle" id="gem-home-toggle" aria-label="Toggle home submenu"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <ul class="gem-mobile-dropdown" id="gem-home-submenu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="products.html">Products</a></li>
+
+                    <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+
+                    <li><a href="custom-kits.html">Custom Kits</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Mobile Actions -->
+            <div class="gem-mobile-actions">
+
+                <div class="gem-mobile-settings">
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-rtl">
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>RTL Mode</span>
+                    </button>
+
+                </div>
+
+                <a href="login.html" class="gem-mobile-login">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+    <!-- ================= COMMON PAGE HERO START ================= -->
+
+    <section class="gem-inner-hero class-banner">
+
+        <div class="gem-inner-hero-overlay"></div>
+
+        <div class="gem-inner-hero-content">
+
+            <span class="gem-inner-hero-subtitle">
+                <span></span>
+                CREATE • LEARN • INSPIRE
+                <span></span>
+            </span>
+
+            <h1>Learn the Art of <em>Jewellery Making</em></h1>
+
+            <p>
+                Discover your creativity through hands-on jewellery-making classes and inspiring workshops designed for
+                every skill level.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+     SECTION 2 - LEARN SOMETHING BEAUTIFUL
+===================================== -->
+
+    <section class="gem-learning-section">
+
+        <div class="gem-learning-container">
+
+            <div class="gem-learning-layout">
+
+                <!-- Left Content -->
+                <div class="gem-learning-content">
+
+                    <span class="gem-learning-subtitle">
+                        DISCOVER YOUR CREATIVE SIDE
+                    </span>
+
+                    <h2>
+                        Every Beautiful Creation
+                        <span>Begins With Learning.</span>
+                    </h2>
+
+                    <p class="gem-learning-description">
+                        At GemNest, we believe everyone has a creative side
+                        waiting to shine. Our jewellery-making classes and
+                        workshops help you explore new techniques, discover
+                        your artistic abilities and create something truly
+                        personal.
+                    </p>
+
+                    <p class="gem-learning-description">
+                        Whether you are picking up beads for the first time
+                        or looking to refine your jewellery-making skills,
+                        there is always something beautiful to learn.
+                    </p>
+
+                    <!-- Learning Highlights -->
+                    <div class="gem-learning-highlights">
+
+                        <div class="gem-learning-highlight">
+                            <div class="gem-learning-icon">
+                                <i class="fa-solid fa-hands"></i>
+                            </div>
+
+                            <div>
+                                <h4>Hands-on Learning</h4>
+                                <p>Learn by creating your own jewellery pieces.</p>
+                            </div>
+                        </div>
+
+                        <div class="gem-learning-highlight">
+                            <div class="gem-learning-icon">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+
+                            <div>
+                                <h4>Creative Techniques</h4>
+                                <p>Explore new ideas, patterns and designs.</p>
+                            </div>
+                        </div>
+
+                        <div class="gem-learning-highlight">
+                            <div class="gem-learning-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+
+                            <div>
+                                <h4>Made With Your Style</h4>
+                                <p>Bring your personal creative vision to life.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#gem-classes" class="gem-learning-button">
+                        Discover Our Classes
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- Right Image Composition -->
+                <div class="gem-learning-visual">
+
+                    <div class="gem-learning-main-image">
+                        <img src="images/learning-main.jpg" alt="Creative Jewellery Making Workshop">
+                    </div>
+
+                    <div class="gem-learning-small-image">
+                        <img src="images/learning-detail.jpg" alt="Handmade Beaded Jewellery">
+                    </div>
+
+                    <div class="gem-learning-image-note">
+                        <i class="fa-solid fa-sparkles"></i>
+
+                        <div>
+                            <span>CREATE WITH PASSION</span>
+                            <p>Learn something beautiful every day.</p>
+                        </div>
+                    </div>
+
+                    <div class="gem-learning-decor"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     SECTION 3 - EXPLORE OUR CLASSES
+===================================== -->
+
+    <section class="gem-classes-section" id="gem-classes">
+
+        <div class="gem-classes-container">
+
+            <!-- Heading -->
+            <div class="gem-classes-heading">
+
+                <div>
+                    <span class="gem-classes-subtitle">
+                        FIND YOUR CREATIVE PATH
+                    </span>
+
+                    <h2>Explore Our Classes</h2>
+                </div>
+
+                <p>
+                    From your very first bead to beautifully finished
+                    jewellery, discover a class that inspires you to create.
+                </p>
+
+            </div>
+
+
+            <!-- Class List -->
+            <div class="gem-classes-list">
+
+                <!-- Class 01 -->
+                <article class="gem-class-card">
+
+                    <div class="gem-class-image">
+                        <img src="images/class-beaded.jpg" alt="Beaded Jewellery Making Class">
+
+                        <span class="gem-class-number">01</span>
+                    </div>
+
+                    <div class="gem-class-content">
+
+                        <div class="gem-class-meta">
+                            <span><i class="fa-solid fa-signal"></i> Beginner</span>
+                            <span><i class="fa-regular fa-clock"></i> 2 Hours</span>
+                        </div>
+
+                        <h3>Beaded Jewellery Making</h3>
+
+                        <p>
+                            Learn the art of combining colourful beads,
+                            creating beautiful patterns and making your
+                            own bracelets and necklaces.
+                        </p>
+
+                        <div class="gem-class-bottom">
+
+                            <span class="gem-class-type">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Hands-on Class
+                            </span>
+
+                            <a href="#gem-upcoming-workshops" class="gem-class-link">
+                                Explore Class
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Class 02 -->
+                <article class="gem-class-card">
+
+                    <div class="gem-class-image">
+                        <img src="images/class-wire.jpg" alt="Wire Wrapping Jewellery Class">
+
+                        <span class="gem-class-number">02</span>
+                    </div>
+
+                    <div class="gem-class-content">
+
+                        <div class="gem-class-meta">
+                            <span><i class="fa-solid fa-signal"></i> Intermediate</span>
+                            <span><i class="fa-regular fa-clock"></i> 3 Hours</span>
+                        </div>
+
+                        <h3>Wire Wrapping Art</h3>
+
+                        <p>
+                            Discover creative wire techniques and learn
+                            to transform beautiful gemstones into
+                            unique handmade jewellery pieces.
+                        </p>
+
+                        <div class="gem-class-bottom">
+
+                            <span class="gem-class-type">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Guided Learning
+                            </span>
+
+                            <a href="#gem-upcoming-workshops" class="gem-class-link">
+                                Explore Class
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Class 03 -->
+                <article class="gem-class-card">
+
+                    <div class="gem-class-image">
+                        <img src="images/class-clay.jpg" alt="Clay Jewellery Making Class">
+
+                        <span class="gem-class-number">03</span>
+                    </div>
+
+                    <div class="gem-class-content">
+
+                        <div class="gem-class-meta">
+                            <span><i class="fa-solid fa-signal"></i> Beginner</span>
+                            <span><i class="fa-regular fa-clock"></i> 2.5 Hours</span>
+                        </div>
+
+                        <h3>Clay Jewellery Design</h3>
+
+                        <p>
+                            Experiment with colours, textures and shapes
+                            while creating artistic clay earrings and
+                            personalised accessories.
+                        </p>
+
+                        <div class="gem-class-bottom">
+
+                            <span class="gem-class-type">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Creative Practice
+                            </span>
+
+                            <a href="#gem-upcoming-workshops" class="gem-class-link">
+                                Explore Class
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Class 04 -->
+                <article class="gem-class-card">
+
+                    <div class="gem-class-image">
+                        <img src="images/class-pearl.jpg" alt="Pearl Jewellery Design Class">
+
+                        <span class="gem-class-number">04</span>
+                    </div>
+
+                    <div class="gem-class-content">
+
+                        <div class="gem-class-meta">
+                            <span><i class="fa-solid fa-signal"></i> All Levels</span>
+                            <span><i class="fa-regular fa-clock"></i> 2 Hours</span>
+                        </div>
+
+                        <h3>Pearl Jewellery Design</h3>
+
+                        <p>
+                            Explore elegant pearl combinations and learn
+                            to create timeless necklaces, bracelets and
+                            delicate jewellery accessories.
+                        </p>
+
+                        <div class="gem-class-bottom">
+
+                            <span class="gem-class-type">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Design Workshop
+                            </span>
+
+                            <a href="#gem-upcoming-workshops" class="gem-class-link">
+                                Explore Class
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Bottom Note -->
+            <div class="gem-classes-note">
+
+                <p>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    Not sure where to begin? Start with a beginner-friendly class.
+                </p>
+
+                <a href="contact.html">
+                    Need Help Choosing?
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     SECTION 4 - UPCOMING WORKSHOPS
+===================================== -->
+
+    <section class="gem-upcoming-section" id="gem-upcoming-workshops">
+
+        <div class="gem-upcoming-container">
+
+            <!-- Section Heading -->
+            <div class="gem-upcoming-heading">
+
+                <div>
+                    <span class="gem-upcoming-subtitle">
+                        SAVE YOUR CREATIVE DATE
+                    </span>
+
+                    <h2>Upcoming Workshops</h2>
+                </div>
+
+                <p>
+                    Make time for creativity. Explore our upcoming sessions
+                    and find the perfect workshop to begin your next creation.
+                </p>
+
+            </div>
+
+
+            <!-- Main Workshop Layout -->
+            <div class="gem-upcoming-layout">
+
+                <!-- Featured Workshop -->
+                <div class="gem-featured-workshop">
+
+                    <div class="gem-featured-workshop-image">
+
+                        <img src="images/workshop-featured.jpg" alt="Featured Jewellery Making Workshop">
+
+                        <span class="gem-featured-badge">
+                            FEATURED WORKSHOP
+                        </span>
+
+                    </div>
+
+                    <div class="gem-featured-workshop-content">
+
+                        <div class="gem-workshop-category">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            SPECIAL CREATIVE SESSION
+                        </div>
+
+                        <h3>Design Your Own Signature Bracelet</h3>
+
+                        <p>
+                            Discover beautiful bead combinations and learn
+                            to design a bracelet that reflects your personal
+                            style in this guided creative session.
+                        </p>
+
+                        <div class="gem-featured-workshop-details">
+
+                            <div>
+                                <i class="fa-regular fa-calendar"></i>
+                                <span>Workshop Date</span>
+                                <strong>November 21, 2026</strong>
+                            </div>
+
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                <span>Time & Duration</span>
+                                <strong>10:00 AM – 12:00 PM</strong>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-users"></i>
+                                <span>Group Size</span>
+                                <strong>Limited Seats</strong>
+                            </div>
+
+                        </div>
+
+                        <a href="contact.html" class="gem-featured-book">
+                            Enquire About This Workshop
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Upcoming Schedule -->
+                <div class="gem-workshop-schedule">
+
+                    <div class="gem-schedule-heading">
+                        <h3>More Creative Sessions</h3>
+                        <span>UPCOMING EVENTS</span>
+                    </div>
+
+
+                    <!-- Workshop 01 -->
+                    <article class="gem-schedule-item">
+
+                        <div class="gem-schedule-date">
+                            <strong>24</strong>
+                            <span>NOV</span>
+                        </div>
+
+                        <div class="gem-schedule-info">
+
+                            <span class="gem-schedule-type">
+                                BEGINNER WORKSHOP
+                            </span>
+
+                            <h4>Pearl Jewellery Essentials</h4>
+
+                            <div class="gem-schedule-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    11:00 AM – 1:00 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-hourglass-half"></i>
+                                    2 Hours
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a href="contact.html" class="gem-schedule-book"
+                            aria-label="Enquire about Pearl Jewellery Essentials">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Workshop 02 -->
+                    <article class="gem-schedule-item">
+
+                        <div class="gem-schedule-date">
+                            <strong>28</strong>
+                            <span>NOV</span>
+                        </div>
+
+                        <div class="gem-schedule-info">
+
+                            <span class="gem-schedule-type">
+                                CREATIVE WORKSHOP
+                            </span>
+
+                            <h4>Colourful Clay Earrings</h4>
+
+                            <div class="gem-schedule-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    2:00 PM – 4:30 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-hourglass-half"></i>
+                                    2.5 Hours
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a href="contact.html" class="gem-schedule-book"
+                            aria-label="Enquire about Colourful Clay Earrings">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Workshop 03 -->
+                    <article class="gem-schedule-item">
+
+                        <div class="gem-schedule-date">
+                            <strong>05</strong>
+                            <span>DEC</span>
+                        </div>
+
+                        <div class="gem-schedule-info">
+
+                            <span class="gem-schedule-type">
+                                INTERMEDIATE WORKSHOP
+                            </span>
+
+                            <h4>Gemstone Wire Wrapping</h4>
+
+                            <div class="gem-schedule-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    10:30 AM – 1:30 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-hourglass-half"></i>
+                                    3 Hours
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a href="contact.html" class="gem-schedule-book"
+                            aria-label="Enquire about Gemstone Wire Wrapping">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+                    <!-- Workshop 04 -->
+                    <article class="gem-schedule-item">
+
+                        <div class="gem-schedule-date">
+                            <strong>12</strong>
+                            <span>DEC</span>
+                        </div>
+
+                        <div class="gem-schedule-info">
+
+                            <span class="gem-schedule-type">
+                                BEGINNER WORKSHOP
+                            </span>
+
+                            <h4>Beaded Necklace Making</h4>
+
+                            <div class="gem-schedule-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    11:00 AM – 1:00 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-hourglass-half"></i>
+                                    2 Hours
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a href="contact.html" class="gem-schedule-book"
+                            aria-label="Enquire about Beaded Necklace Making">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Workshop 05 -->
+                    <article class="gem-schedule-item">
+
+                        <div class="gem-schedule-date">
+                            <strong>19</strong>
+                            <span>DEC</span>
+                        </div>
+
+                        <div class="gem-schedule-info">
+
+                            <span class="gem-schedule-type">
+                                CREATIVE WORKSHOP
+                            </span>
+
+                            <h4>Festive Jewellery Creations</h4>
+
+                            <div class="gem-schedule-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    2:00 PM – 5:00 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-hourglass-half"></i>
+                                    3 Hours
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a href="contact.html" class="gem-schedule-book"
+                            aria-label="Enquire about Festive Jewellery Creations">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+                    <!-- Schedule Footer -->
+                    <div class="gem-schedule-footer">
+
+                        <p>
+                            <i class="fa-solid fa-circle-info"></i>
+                            Workshop dates and availability may vary.
+                        </p>
+
+                        <a href="contact.html">
+                            Ask About All Sessions
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     SECTION 5 - YOUR CREATIVE JOURNEY
+===================================== -->
+
+    <section class="gem-journey-section">
+
+        <div class="gem-journey-container">
+
+            <!-- Heading -->
+            <div class="gem-journey-heading">
+
+                <span class="gem-journey-subtitle">
+                    FROM FIRST IDEA TO FINISHED CREATION
+                </span>
+
+                <h2>Your Creative Journey</h2>
+
+                <p>
+                    Every creative journey starts with a simple idea.
+                    Follow our easy learning process and turn your
+                    imagination into something beautiful.
+                </p>
+
+            </div>
+
+
+            <!-- Journey Steps -->
+            <div class="gem-journey-timeline">
+
+                <!-- Step 01 -->
+                <article class="gem-journey-step">
+
+                    <div class="gem-journey-visual">
+
+                        <div class="gem-journey-image">
+                            <img src="images/journey-choose-1.jpg" alt="Choosing Jewellery Making Class">
+                        </div>
+
+                        <span class="gem-journey-step-number">01</span>
+
+                    </div>
+
+                    <div class="gem-journey-step-content">
+
+                        <span class="gem-journey-step-label">
+                            THE BEGINNING
+                        </span>
+
+                        <h3>Choose Your Class</h3>
+
+                        <p>
+                            Explore our creative sessions and choose
+                            the jewellery-making class that matches
+                            your interests and skill level.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Step 02 -->
+                <article class="gem-journey-step">
+
+                    <div class="gem-journey-visual">
+
+                        <div class="gem-journey-image">
+                            <img src="images/journey-materials-1.jpg" alt="Jewellery Making Materials">
+                        </div>
+
+                        <span class="gem-journey-step-number">02</span>
+
+                    </div>
+
+                    <div class="gem-journey-step-content">
+
+                        <span class="gem-journey-step-label">
+                            GET PREPARED
+                        </span>
+
+                        <h3>Gather Your Materials</h3>
+
+                        <p>
+                            Discover beautiful beads, charms, threads
+                            and essential tools selected for your
+                            creative learning experience.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Step 03 -->
+                <article class="gem-journey-step">
+
+                    <div class="gem-journey-visual">
+
+                        <div class="gem-journey-image">
+                            <img src="images/journey-create-1.jpg" alt="Creating Handmade Jewellery">
+                        </div>
+
+                        <span class="gem-journey-step-number">03</span>
+
+                    </div>
+
+                    <div class="gem-journey-step-content">
+
+                        <span class="gem-journey-step-label">
+                            THE CREATIVE PROCESS
+                        </span>
+
+                        <h3>Learn & Create</h3>
+
+                        <p>
+                            Follow guided demonstrations, practise
+                            new techniques and bring your own
+                            jewellery design to life.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Step 04 -->
+                <article class="gem-journey-step">
+
+                    <div class="gem-journey-visual">
+
+                        <div class="gem-journey-image">
+                            <img src="images/journey-finish-1.jpg" alt="Finished Handmade Jewellery">
+                        </div>
+
+                        <span class="gem-journey-step-number">04</span>
+
+                    </div>
+
+                    <div class="gem-journey-step-content">
+
+                        <span class="gem-journey-step-label">
+                            YOUR MASTERPIECE
+                        </span>
+
+                        <h3>Take Home Your Creation</h3>
+
+                        <p>
+                            Celebrate your finished jewellery piece
+                            and take home something meaningful
+                            that you created yourself.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Bottom Message -->
+            <div class="gem-journey-footer">
+
+                <div class="gem-journey-footer-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <p>
+                    Great things are made one little detail at a time.
+                </p>
+
+                <span>MAKE EVERY CREATION YOUR OWN.</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     SECTION 6 - WORKSHOP EXPERIENCE
+===================================== -->
+
+    <section class="gem-experience-section">
+
+        <div class="gem-experience-container">
+
+            <!-- Main Layout -->
+            <div class="gem-experience-layout">
+
+                <!-- Left Visual -->
+                <div class="gem-experience-visual">
+
+                    <div class="gem-experience-main-image">
+                        <img src="images/experience-main.jpg" alt="Creative Jewellery Workshop Experience">
+                    </div>
+
+                    <div class="gem-experience-detail-image">
+                        <img src="images/experience-detail.jpg" alt="Handmade Jewellery Crafting">
+                    </div>
+
+                    <div class="gem-experience-stamp">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>MADE WITH</span>
+                        <strong>CREATIVITY</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Right Content -->
+                <div class="gem-experience-content">
+
+                    <span class="gem-experience-subtitle">
+                        MORE THAN JUST A CLASS
+                    </span>
+
+                    <h2>
+                        An Experience
+                        <span>Made For Creators.</span>
+                    </h2>
+
+                    <p class="gem-experience-intro">
+                        At GemNest, every workshop is an opportunity to
+                        explore, experiment and express yourself. Enjoy
+                        a welcoming creative atmosphere where every
+                        little detail inspires something beautiful.
+                    </p>
+
+
+                    <!-- Experience Benefits -->
+                    <div class="gem-experience-benefits">
+
+                        <div class="gem-experience-benefit">
+
+                            <div class="gem-experience-benefit-icon">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+
+                            <div>
+                                <h3>Learn Together</h3>
+                                <p>
+                                    Enjoy a welcoming environment and
+                                    share creative ideas with others.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="gem-experience-benefit">
+
+                            <div class="gem-experience-benefit-icon">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+
+                            <div>
+                                <h3>Quality Materials</h3>
+                                <p>
+                                    Explore carefully selected beads,
+                                    charms and jewellery-making essentials.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="gem-experience-benefit">
+
+                            <div class="gem-experience-benefit-icon">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+
+                            <div>
+                                <h3>Guided Instruction</h3>
+                                <p>
+                                    Follow step-by-step demonstrations
+                                    and practise new creative techniques.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="gem-experience-benefit">
+
+                            <div class="gem-experience-benefit-icon">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+
+                            <div>
+                                <h3>Take Home Your Work</h3>
+                                <p>
+                                    Finish your session with a handmade
+                                    creation that is uniquely yours.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quote Panel -->
+                    <div class="gem-experience-quote">
+
+                        <i class="fa-solid fa-quote-left"></i>
+
+                        <p>
+                            Creativity is not about perfection.
+                            It is about enjoying every moment of making.
+                        </p>
+
+                        <span>THE GEMNEST CREATIVE SPIRIT</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Section 7: Workshop Final CTA -->
+    <section class="gem-workshop-cta-section">
+        <div class="gem-workshop-cta-container">
+
+            <div class="gem-workshop-cta-content">
+                <span class="gem-workshop-cta-label">
+                    YOUR CREATIVE STORY STARTS HERE
+                </span>
+
+                <h2>
+                    Make Time for <span>Creativity.</span>
+                </h2>
+
+                <p>
+                    Join a GemNest class or workshop and discover the joy
+                    of turning beautiful materials into something uniquely yours.
+                    Learn new techniques, explore your creativity, and create
+                    jewellery that reflects your personal style.
+                </p>
+
+                <div class="gem-workshop-cta-buttons">
+                    <a href="#gem-upcoming-workshops" class="gem-workshop-cta-primary">
+                        Explore Upcoming Workshops
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="gem-workshop-cta-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <div class="gem-workshop-cta-note">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Every beautiful creation begins with a little inspiration.</span>
+                </div>
+            </div>
+
+            <div class="gem-workshop-cta-visual">
+                <div class="gem-workshop-cta-image-frame">
+                    <img src="images/class-cta.jpg" alt="Creative jewellery making workshop">
+                </div>
+
+                <div class="gem-workshop-cta-floating">
+                    <span class="gem-workshop-cta-floating-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </span>
+                    <div>
+                        <strong>Create Something Beautiful</strong>
+                        <small>Your ideas. Your style. Your creation.</small>
+                    </div>
+                </div>
+
+                <div class="gem-workshop-cta-decoration"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="gem-footer">
+
+        <div class="gem-footer-main">
+
+            <div class="gem-footer-container">
+
+                <!-- Brand Column -->
+                <div class="gem-footer-brand">
+
+                    <a href="index.html" class="gem-footer-logo">
+                        <img src="images/logo.png" alt="GemNest Logo">
+                    </a>
+
+                    <p>
+                        Bring your creative jewellery ideas to life with
+                        beautiful beads, unique findings and thoughtfully
+                        curated jewellery-making supplies.
+                    </p>
+
+                    <div class="gem-footer-social">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="gem-footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+                        <li><a href="custom-kits.html">Custom Kits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Product Categories -->
+                <div class="gem-footer-links">
+
+                    <h3>Our Collections</h3>
+
+                    <ul>
+                        <li><a href="products.html">Gemstone Beads</a></li>
+                        <li><a href="products.html">Glass Beads</a></li>
+                        <li><a href="products.html">Pearl Beads</a></li>
+                        <li><a href="products.html">Jewellery Findings</a></li>
+                        <li><a href="products.html">Charms & Pendants</a></li>
+                        <li><a href="custom-kits.html">DIY Craft Kits</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="gem-footer-contact">
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+                        Have a creative idea or need help choosing
+                        your jewellery supplies? We'd love to hear from you.
+                    </p>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:hello@gemnest.com">
+                            hello@gemnest.com
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="gem-footer-bottom">
+
+            <div class="gem-footer-bottom-container">
+
+                <p>
+                    © 2026 GemNest. All Rights Reserved.
+                </p>
+
+                <div class="gem-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="gem-footer-credit">
+                    Crafted with <i class="fa-solid fa-heart"></i> for Creators
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

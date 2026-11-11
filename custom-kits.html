@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GemNest</title>
+
+    <meta name="description"
+        content="Discover beautiful beads, jewellery-making supplies, creative kits and hands-on workshops at GemNest.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="gem-header">
+
+        <div class="gem-header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="gem-logo">
+                <img src="images/logo.png" alt="GemNest Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="gem-desktop-nav">
+                <ul class="gem-nav-list">
+
+                    <li class="gem-nav-item gem-home-dropdown">
+                        <a href="#" class="gem-nav-link">
+                            Home <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="gem-dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="about.html" class="gem-nav-link">About</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="products.html" class="gem-nav-link">Products</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="classes-workshops.html" class="gem-nav-link">
+                            Classes & Workshops
+                        </a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="custom-kits.html" class="gem-nav-link active">Custom Kits</a>
+                    </li>
+
+                    <li class="gem-nav-item">
+                        <a href="contact.html" class="gem-nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Right Actions -->
+            <div class="gem-header-actions">
+
+                <button class="gem-icon-btn" id="gem-desktop-theme" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="gem-icon-btn" id="gem-desktop-rtl" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="gem-login-btn">
+                    Login <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="gem-menu-toggle" id="gem-menu-toggle" aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="gem-mobile-menu" id="gem-mobile-menu">
+
+            <nav class="gem-mobile-nav">
+                <ul class="gem-mobile-nav-list">
+
+                    <li class="gem-mobile-home">
+
+                        <div class="gem-mobile-home-row">
+                            <a href="index.html">Home</a>
+
+                            <button class="gem-home-toggle" id="gem-home-toggle" aria-label="Toggle home submenu"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <ul class="gem-mobile-dropdown" id="gem-home-submenu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="products.html">Products</a></li>
+
+                    <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+
+                    <li><a href="custom-kits.html">Custom Kits</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Mobile Actions -->
+            <div class="gem-mobile-actions">
+
+                <div class="gem-mobile-settings">
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+
+                    <button class="gem-mobile-setting-btn" id="gem-mobile-rtl">
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>RTL Mode</span>
+                    </button>
+
+                </div>
+
+                <a href="login.html" class="gem-mobile-login">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+    <!-- ================= COMMON PAGE HERO START ================= -->
+
+    <section class="gem-inner-hero custom-banner">
+
+        <div class="gem-inner-hero-overlay"></div>
+
+        <div class="gem-inner-hero-content">
+
+            <span class="gem-inner-hero-subtitle">
+                <span></span>
+                CUSTOMISE • CREATE • INSPIRE
+                <span></span>
+            </span>
+
+            <h1>Create Your Own <em>Jewellery Kit</em></h1>
+
+            <p>
+                Bring your jewellery ideas to life with a kit made just for you. Choose your favourite beads, charms,
+                colours and essentials to create a personalised jewellery-making experience that matches your style.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Section 2: Why Choose a Custom Kit -->
+    <section class="gem-custom-why-section">
+        <div class="gem-custom-why-container">
+
+            <!-- Left Content -->
+            <div class="gem-custom-why-content">
+
+                <span class="gem-custom-why-label">
+                    MADE AROUND YOUR CREATIVITY
+                </span>
+
+                <h2>
+                    Not Just a Kit.
+                    <span>Your Creative World.</span>
+                </h2>
+
+                <p class="gem-custom-why-description">
+                    Every creative idea is different. That's why our custom kits
+                    let you choose the materials, colours and little details
+                    that make your jewellery truly yours.
+                </p>
+
+                <div class="gem-custom-why-image">
+                    <img src="images/custom-why-main.jpg" alt="Personalised jewellery making supplies">
+
+                    <div class="gem-custom-why-image-caption">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Made to match your imagination</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Features -->
+            <div class="gem-custom-why-features">
+
+                <div class="gem-custom-why-card gem-custom-why-card-one">
+                    <div class="gem-custom-why-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <span class="gem-custom-why-number">01</span>
+
+                    <h3>Made Your Way</h3>
+
+                    <p>
+                        Pick your favourite materials, colours and charms
+                        to build a kit that feels uniquely yours.
+                    </p>
+                </div>
+
+                <div class="gem-custom-why-card gem-custom-why-card-two">
+                    <div class="gem-custom-why-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+
+                    <span class="gem-custom-why-number">02</span>
+
+                    <h3>Endless Creativity</h3>
+
+                    <p>
+                        Mix different textures, shades and styles to
+                        bring your own jewellery ideas to life.
+                    </p>
+                </div>
+
+                <div class="gem-custom-why-card gem-custom-why-card-three">
+                    <div class="gem-custom-why-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+                    <span class="gem-custom-why-number">03</span>
+
+                    <h3>Beginner Friendly</h3>
+
+                    <p>
+                        Start your creative journey with carefully
+                        selected essentials for your chosen project.
+                    </p>
+                </div>
+
+                <div class="gem-custom-why-card gem-custom-why-card-four">
+                    <div class="gem-custom-why-icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+
+                    <span class="gem-custom-why-number">04</span>
+
+                    <h3>Thoughtful Gifting</h3>
+
+                    <p>
+                        Create a personalised kit for someone who
+                        loves handmade crafts and creative surprises.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 3: Build Your Own Kit -->
+    <section class="gem-kit-builder-section" id="gem-kit-builder">
+        <div class="gem-kit-builder-container">
+
+            <!-- Section Heading -->
+            <div class="gem-kit-builder-heading">
+                <span>DESIGNED BY YOU</span>
+                <h2>Build a Kit That’s <em>Uniquely Yours.</em></h2>
+                <p>
+                    Choose your favourite essentials, mix your favourite colours
+                    and create a jewellery-making kit that matches your imagination.
+                </p>
+            </div>
+
+            <div class="gem-kit-builder-layout">
+
+                <!-- LEFT: KIT CUSTOMISATION -->
+                <div class="gem-kit-builder-options">
+
+                    <div class="gem-kit-builder-step">
+                        <span class="gem-kit-step-number">01</span>
+                        <div class="gem-kit-step-content">
+                            <h3>Choose Your Jewellery Type</h3>
+                            <p>What would you love to create?</p>
+
+                            <div class="gem-kit-type-grid">
+                                <label class="gem-kit-type-option">
+                                    <input type="radio" name="kitType" value="Bracelet Kit" data-price="299" checked>
+                                    <span class="gem-kit-type-icon">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </span>
+                                    <strong>Bracelet</strong>
+                                </label>
+
+                                <label class="gem-kit-type-option">
+                                    <input type="radio" name="kitType" value="Necklace Kit" data-price="399">
+                                    <span class="gem-kit-type-icon">
+                                        <i class="fa-solid fa-gem"></i>
+                                    </span>
+                                    <strong>Necklace</strong>
+                                </label>
+
+                                <label class="gem-kit-type-option">
+                                    <input type="radio" name="kitType" value="Earring Kit" data-price="349">
+                                    <span class="gem-kit-type-icon">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <strong>Earrings</strong>
+                                </label>
+
+                                <label class="gem-kit-type-option">
+                                    <input type="radio" name="kitType" value="Charm Kit" data-price="449">
+                                    <span class="gem-kit-type-icon">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <strong>Charm Jewellery</strong>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gem-kit-builder-divider"></div>
+
+                    <div class="gem-kit-builder-step">
+                        <span class="gem-kit-step-number">02</span>
+                        <div class="gem-kit-step-content">
+                            <h3>Select Your Colour Palette</h3>
+                            <p>Pick the shades that inspire you.</p>
+
+                            <div class="gem-kit-colour-options">
+                                <label>
+                                    <input type="radio" name="kitColour" value="Pastel Dreams" checked>
+                                    <span class="gem-kit-colour-circle gem-kit-pastel"></span>
+                                    <small>Pastel</small>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="kitColour" value="Ocean Blues">
+                                    <span class="gem-kit-colour-circle gem-kit-blue"></span>
+                                    <small>Ocean</small>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="kitColour" value="Earthy Tones">
+                                    <span class="gem-kit-colour-circle gem-kit-earth"></span>
+                                    <small>Earthy</small>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="kitColour" value="Rose Romance">
+                                    <span class="gem-kit-colour-circle gem-kit-rose"></span>
+                                    <small>Rose</small>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="kitColour" value="Golden Glow">
+                                    <span class="gem-kit-colour-circle gem-kit-gold"></span>
+                                    <small>Golden</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gem-kit-builder-divider"></div>
+
+                    <div class="gem-kit-builder-step">
+                        <span class="gem-kit-step-number">03</span>
+                        <div class="gem-kit-step-content">
+                            <h3>Pick Your Materials</h3>
+                            <p>Select the materials you'd like in your kit.</p>
+
+                            <div class="gem-kit-checkbox-list">
+                                <label>
+                                    <input type="checkbox" name="kitMaterial" value="Glass Beads" data-price="99"
+                                        checked>
+                                    <span class="gem-kit-custom-check"></span>
+                                    <span>Glass Beads</span>
+                                    <strong>+₹99</strong>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="kitMaterial" value="Natural Gemstones"
+                                        data-price="149">
+                                    <span class="gem-kit-custom-check"></span>
+                                    <span>Natural Gemstones</span>
+                                    <strong>+₹149</strong>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="kitMaterial" value="Freshwater Pearls"
+                                        data-price="129">
+                                    <span class="gem-kit-custom-check"></span>
+                                    <span>Freshwater Pearls</span>
+                                    <strong>+₹129</strong>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="kitMaterial" value="Acrylic Beads" data-price="79">
+                                    <span class="gem-kit-custom-check"></span>
+                                    <span>Acrylic Beads</span>
+                                    <strong>+₹79</strong>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gem-kit-builder-divider"></div>
+
+                    <div class="gem-kit-builder-step">
+                        <span class="gem-kit-step-number">04</span>
+                        <div class="gem-kit-step-content">
+                            <h3>Add Your Favourite Charms</h3>
+                            <p>Give your creation a personal touch.</p>
+
+                            <div class="gem-kit-charm-options">
+                                <label>
+                                    <input type="checkbox" name="kitCharm" value="Heart Charms" data-price="59">
+                                    <span><i class="fa-solid fa-heart"></i></span>
+                                    <small>Heart</small>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="kitCharm" value="Star Charms" data-price="59">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <small>Star</small>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="kitCharm" value="Flower Charms" data-price="69">
+                                    <span><i class="fa-solid fa-spa"></i></span>
+                                    <small>Flower</small>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="kitCharm" value="Butterfly Charms" data-price="79">
+                                    <span><i class="fa-solid fa-bug"></i></span>
+                                    <small>Butterfly</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gem-kit-builder-divider"></div>
+
+                    <div class="gem-kit-builder-step">
+                        <span class="gem-kit-step-number">05</span>
+                        <div class="gem-kit-step-content">
+                            <h3>Include Your Tools</h3>
+                            <p>Choose the essentials for your creative process.</p>
+
+                            <div class="gem-kit-checkbox-list">
+                                <label>
+                                    <input type="checkbox" name="kitTool" value="Jewellery Pliers" data-price="149">
+                                    <span class="gem-kit-custom-check"></span>
+                                    <span>Jewellery Pliers</span>
+                                    <strong>+₹149</strong>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="kitTool" value="Beading Needle Set" data-price="79">
+                                    <span class="gem-kit-custom-check"></span>
+                                    <span>Beading Needle Set</span>
+                                    <strong>+₹79</strong>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="kitTool" value="Jewellery Thread" data-price="49">
+                                    <span class="gem-kit-custom-check"></span>
+                                    <span>Jewellery Thread</span>
+                                    <strong>+₹49</strong>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: LIVE KIT SUMMARY -->
+                <aside class="gem-kit-builder-summary">
+
+                    <div class="gem-kit-summary-top">
+                        <span>YOUR CREATION</span>
+                        <h3>Kit Summary</h3>
+                        <p>Your personalised kit, all in one place.</p>
+                    </div>
+
+                    <div class="gem-kit-summary-image">
+                        <img src="images/custom-kit-preview.jpg" alt="Custom jewellery making kit">
+                    </div>
+
+                    <div class="gem-kit-summary-details">
+                        <div>
+                            <span>Jewellery Type</span>
+                            <strong id="gemKitType">Bracelet Kit</strong>
+                        </div>
+
+                        <div>
+                            <span>Colour Palette</span>
+                            <strong id="gemKitColour">Pastel Dreams</strong>
+                        </div>
+                    </div>
+
+                    <div class="gem-kit-summary-divider"></div>
+
+                    <h4>Your Selected Items</h4>
+
+                    <ul class="gem-kit-summary-items" id="gemKitItems">
+                        <li>Glass Beads</li>
+                    </ul>
+
+                    <div class="gem-kit-summary-divider"></div>
+
+                    <div class="gem-kit-summary-total">
+                        <span>Estimated Total</span>
+                        <strong id="gemKitTotal">₹398</strong>
+                    </div>
+
+                    <p class="gem-kit-summary-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Sample pricing for kit customisation.
+                    </p>
+
+                    <button type="button" class="gem-kit-summary-button" id="gemKitBuildButton">
+                        Create My Kit
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <button type="button" class="gem-kit-reset-button" id="gemKitResetButton">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Reset Selections
+                    </button>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Explore Kit Inspirations -->
+    <section class="gem-kit-inspiration-section" id="gem-kit-inspirations">
+
+        <div class="gem-kit-inspiration-container">
+
+            <!-- Heading -->
+            <div class="gem-kit-inspiration-heading">
+                <div>
+                    <span>FIND YOUR CREATIVE SPARK</span>
+                    <h2>Ideas Worth <em>Creating.</em></h2>
+                </div>
+
+                <p>
+                    Not sure where to begin? Explore our kit inspirations
+                    and discover a creative project that feels like you.
+                </p>
+            </div>
+
+            <!-- Collection Layout -->
+            <div class="gem-kit-inspiration-grid">
+
+                <!-- Featured Bracelet Kit -->
+                <article class="gem-kit-inspiration-card gem-kit-inspiration-featured">
+
+                    <img src="images/inspiration-bracelet.jpg" alt="DIY bracelet making kit">
+
+                    <div class="gem-kit-inspiration-overlay">
+                        <span class="gem-kit-inspiration-tag">01 / BEST FOR BEGINNERS</span>
+
+                        <div class="gem-kit-inspiration-info">
+                            <div>
+                                <h3>The Bracelet Edit</h3>
+                                <p>
+                                    Mix beautiful beads, playful charms and
+                                    colours to create bracelets that tell your story.
+                                </p>
+                            </div>
+
+                            <a href="products.html?kit=bracelet" aria-label="Explore bracelet kit">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Necklace Kit -->
+                <article class="gem-kit-inspiration-card gem-kit-inspiration-necklace">
+
+                    <img src="images/inspiration-necklace.jpg" alt="DIY necklace making kit">
+
+                    <div class="gem-kit-inspiration-overlay">
+                        <span class="gem-kit-inspiration-tag">02 / ELEGANT CREATIONS</span>
+
+                        <div class="gem-kit-inspiration-info">
+                            <div>
+                                <h3>The Necklace Studio</h3>
+                                <p>
+                                    Combine delicate chains, pearls and
+                                    statement details for your own necklace.
+                                </p>
+                            </div>
+
+                            <a href="products.html?kit=necklace" aria-label="Explore necklace kit">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Earring Kit -->
+                <article class="gem-kit-inspiration-card gem-kit-inspiration-earring">
+
+                    <img src="images/inspiration-earring.jpg" alt="DIY earring making kit">
+
+                    <div class="gem-kit-inspiration-overlay">
+                        <span class="gem-kit-inspiration-tag">03 / EXPRESS YOUR STYLE</span>
+
+                        <div class="gem-kit-inspiration-info">
+                            <div>
+                                <h3>The Earring Atelier</h3>
+                                <p>
+                                    Design eye-catching earrings with
+                                    beads, hooks and charming little details.
+                                </p>
+                            </div>
+
+                            <a href="products.html?kit=earring" aria-label="Explore earring kit">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+            <!-- Bottom Link -->
+            <div class="gem-kit-inspiration-bottom">
+                <p>Have an idea of your own? Make it happen with a custom kit.</p>
+
+                <a href="#gem-kit-builder">
+                    Build Your Own Kit
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Section 5: How It Works -->
+    <section class="gem-kit-process-section">
+
+        <div class="gem-kit-process-container">
+
+            <!-- Heading -->
+            <div class="gem-kit-process-heading">
+                <span>YOUR CREATIVE JOURNEY</span>
+                <h2>Four Steps to Your <em>Perfect Kit.</em></h2>
+                <p>
+                    Creating your dream jewellery kit is simple.
+                    Follow these steps and get ready to bring your ideas to life.
+                </p>
+            </div>
+
+            <!-- Process Timeline -->
+            <div class="gem-kit-process-timeline">
+
+                <!-- Step 1 -->
+                <div class="gem-kit-process-item">
+
+                    <div class="gem-kit-process-image">
+                        <img src="images/process-choose.jpg" alt="Choosing a jewellery making kit">
+                        <span class="gem-kit-process-number">01</span>
+                    </div>
+
+                    <div class="gem-kit-process-content">
+                        <span class="gem-kit-process-step-label">STEP ONE</span>
+                        <h3>Choose Your Style</h3>
+                        <p>
+                            Start with your favourite jewellery type and
+                            explore the colours and creative possibilities.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Step 2 -->
+                <div class="gem-kit-process-item">
+
+                    <div class="gem-kit-process-image">
+                        <img src="images/process-customise.jpg" alt="Customising beads and jewellery materials">
+                        <span class="gem-kit-process-number">02</span>
+                    </div>
+
+                    <div class="gem-kit-process-content">
+                        <span class="gem-kit-process-step-label">STEP TWO</span>
+                        <h3>Customise Your Kit</h3>
+                        <p>
+                            Pick your favourite beads, gemstones, charms
+                            and tools to create your personalised selection.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Step 3 -->
+                <div class="gem-kit-process-item">
+
+                    <div class="gem-kit-process-image">
+                        <img src="images/process-preparation.jpg" alt="Jewellery making kit being prepared">
+                        <span class="gem-kit-process-number">03</span>
+                    </div>
+
+                    <div class="gem-kit-process-content">
+                        <span class="gem-kit-process-step-label">STEP THREE</span>
+                        <h3>Get Ready to Create</h3>
+                        <p>
+                            Review your selections and get your creative
+                            essentials ready for your jewellery-making journey.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Step 4 -->
+                <div class="gem-kit-process-item">
+
+                    <div class="gem-kit-process-image">
+                        <img src="images/process-create.jpg" alt="Handmade jewellery creation">
+                        <span class="gem-kit-process-number">04</span>
+                    </div>
+
+                    <div class="gem-kit-process-content">
+                        <span class="gem-kit-process-step-label">STEP FOUR</span>
+                        <h3>Create Something Beautiful</h3>
+                        <p>
+                            Enjoy the process, experiment with your materials
+                            and turn your imagination into handmade jewellery.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Note -->
+            <div class="gem-kit-process-bottom">
+                <div class="gem-kit-process-bottom-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <p>
+                    Every little detail makes your creation one of a kind.
+                </p>
+
+                <a href="#gem-kit-builder">
+                    Start Customising
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Section 6: Custom Kit Final CTA -->
+    <section class="gem-custom-final-section">
+
+        <div class="gem-custom-final-container">
+
+            <!-- Left Content -->
+            <div class="gem-custom-final-content">
+
+                <span class="gem-custom-final-label">
+                    YOUR IDEAS DESERVE TO BE CREATED
+                </span>
+
+                <h2>
+                    Your Creativity.
+                    <em>Your Custom Kit.</em>
+                </h2>
+
+                <p>
+                    The perfect jewellery-making experience starts with
+                    your imagination. Choose your favourite materials,
+                    add the details you love and create a kit that is
+                    completely your own.
+                </p>
+
+                <div class="gem-custom-final-buttons">
+
+                    <a href="#gem-kit-builder" class="gem-custom-final-primary">
+                        Build Your Custom Kit
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="gem-custom-final-secondary">
+                        Have a Question?
+                    </a>
+
+                </div>
+
+                <div class="gem-custom-final-note">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Make something meaningful. Make it yours.</span>
+                </div>
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="gem-custom-final-visual">
+
+                <div class="gem-custom-final-image">
+                    <img src="images/custom-final-cta.jpg" alt="Beautiful personalised jewellery making kit">
+                </div>
+
+                <div class="gem-custom-final-stamp">
+                    <span>MADE</span>
+                    <i class="fa-solid fa-star"></i>
+                    <span>BY YOU</span>
+                </div>
+
+                <div class="gem-custom-final-floating">
+                    <i class="fa-solid fa-gem"></i>
+                    <div>
+                        <strong>One Kit. Endless Ideas.</strong>
+                        <small>Created around your imagination.</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="gem-footer">
+
+        <div class="gem-footer-main">
+
+            <div class="gem-footer-container">
+
+                <!-- Brand Column -->
+                <div class="gem-footer-brand">
+
+                    <a href="index.html" class="gem-footer-logo">
+                        <img src="images/logo.png" alt="GemNest Logo">
+                    </a>
+
+                    <p>
+                        Bring your creative jewellery ideas to life with
+                        beautiful beads, unique findings and thoughtfully
+                        curated jewellery-making supplies.
+                    </p>
+
+                    <div class="gem-footer-social">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="gem-footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="classes-workshops.html">Classes & Workshops</a></li>
+                        <li><a href="custom-kits.html">Custom Kits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Product Categories -->
+                <div class="gem-footer-links">
+
+                    <h3>Our Collections</h3>
+
+                    <ul>
+                        <li><a href="products.html">Gemstone Beads</a></li>
+                        <li><a href="products.html">Glass Beads</a></li>
+                        <li><a href="products.html">Pearl Beads</a></li>
+                        <li><a href="products.html">Jewellery Findings</a></li>
+                        <li><a href="products.html">Charms & Pendants</a></li>
+                        <li><a href="custom-kits.html">DIY Craft Kits</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="gem-footer-contact">
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+                        Have a creative idea or need help choosing
+                        your jewellery supplies? We'd love to hear from you.
+                    </p>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:hello@gemnest.com">
+                            hello@gemnest.com
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+                    </div>
+
+                    <div class="gem-footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="gem-footer-bottom">
+
+            <div class="gem-footer-bottom-container">
+
+                <p>
+                    © 2026 GemNest. All Rights Reserved.
+                </p>
+
+                <div class="gem-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="gem-footer-credit">
+                    Crafted with <i class="fa-solid fa-heart"></i> for Creators
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
