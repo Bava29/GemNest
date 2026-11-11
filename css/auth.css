@@ -1,0 +1,621 @@
+:root {
+    --gem-auth-primary: #814B55;
+    --gem-auth-secondary: #E8CDBD;
+    --gem-auth-warm-bg: #f7f0eb;
+    --gem-auth-card-bg: #ffffff;
+    --gem-auth-input-bg: #ffffff;
+    --gem-auth-border: var(--gem-auth-secondary);
+    --gem-auth-muted: var(--gem-auth-primary);
+}
+
+.gem-auth-page {
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    color: var(--gem-auth-primary);
+    background: var(--gem-auth-warm-bg);
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
+}
+
+.gem-auth-page *,
+.gem-auth-page *::before,
+.gem-auth-page *::after {
+    box-sizing: border-box;
+}
+
+.gem-auth-page button,
+.gem-auth-page input {
+    font: inherit;
+}
+
+.gem-auth-shell {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.gem-auth-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: min(100% - 36px, 1180px);
+    margin: 0 auto;
+    padding: 22px 0 8px;
+}
+
+.gem-auth-preference {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 13px;
+    border: 1px solid var(--gem-auth-border);
+    border-radius: 6px;
+    color: var(--gem-auth-primary);
+    background: var(--gem-auth-card-bg);
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.gem-auth-preference:hover {
+    border-color: var(--gem-auth-primary);
+    background: var(--gem-auth-secondary);
+}
+
+.gem-auth-main {
+    display: grid;
+    flex: 1;
+    place-items: center;
+    padding: 14px 18px 38px;
+}
+
+.gem-auth-card {
+    width: min(100%, 520px);
+    padding: 34px 42px 30px;
+    border: 1px solid rgba(129, 75, 85, .12);
+    border-radius: 12px;
+    background: var(--gem-auth-card-bg);
+    box-shadow: 0 18px 55px rgba(83, 48, 54, .12);
+    text-align: center;
+}
+
+.gem-auth-logo {
+    display: flex;
+    width: fit-content;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px;
+}
+
+.gem-auth-logo img {
+    display: block;
+    width: 160px;
+    max-width: 100%;
+    height: 64px;
+    object-fit: contain;
+}
+
+.gem-auth-eyebrow {
+    margin: 0 0 7px;
+    color: var(--gem-auth-primary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .18em;
+}
+
+.gem-auth-card h1 {
+    margin: 0;
+    color: var(--gem-auth-primary);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(27px, 4vw, 34px);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.gem-auth-description {
+    max-width: 390px;
+    margin: 9px auto 23px;
+    color: var(--gem-auth-muted);
+    font-size: 14px;
+}
+
+.gem-auth-form {
+    text-align: start;
+}
+
+.gem-auth-label {
+    display: block;
+    margin: 0 0 6px;
+    color: var(--gem-auth-primary);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.gem-auth-field {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.gem-auth-field input {
+    display: block;
+    width: 100%;
+    height: 47px;
+    padding: 10px 43px;
+    border: 1px solid var(--gem-auth-border);
+    border-radius: 6px;
+    outline: none;
+    color: var(--gem-auth-primary);
+    background: var(--gem-auth-input-bg);
+    font-size: 13px;
+    transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.gem-auth-field input::placeholder {
+    color: var(--gem-auth-primary);
+    opacity: 1;
+}
+
+.gem-auth-field input:focus {
+    border-color: var(--gem-auth-primary);
+    box-shadow: 0 0 0 3px rgba(129, 75, 85, .12);
+}
+
+.gem-auth-field-icon {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 15px;
+    color: var(--gem-auth-primary);
+    font-size: 14px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.gem-auth-eye {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border: 0;
+    border-radius: 6px;
+    color: var(--gem-auth-primary);
+    background: transparent;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.gem-auth-eye:hover,
+.gem-auth-eye:focus-visible {
+    background: var(--gem-auth-secondary);
+    outline: none;
+}
+
+.gem-auth-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 17px;
+    font-size: 12px;
+}
+
+.gem-auth-check {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--gem-auth-muted);
+    cursor: pointer;
+}
+
+.gem-auth-check input {
+    width: 15px;
+    height: 15px;
+    flex: 0 0 auto;
+    margin: 2px 0 0;
+    accent-color: var(--gem-auth-primary);
+}
+
+.gem-auth-inline-link,
+.gem-auth-switch a,
+.gem-auth-home,
+.gem-auth-terms a {
+    color: var(--gem-auth-primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.gem-auth-inline-link:hover,
+.gem-auth-switch a:hover,
+.gem-auth-home:hover,
+.gem-auth-terms a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.gem-auth-submit {
+    display: flex;
+    width: 100%;
+    min-height: 47px;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    border: 1px solid var(--gem-auth-primary);
+    border-radius: 6px;
+    color: #ffffff;
+    background: var(--gem-auth-primary);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color .2s ease, background-color .2s ease, transform .2s ease;
+}
+
+.gem-auth-submit:hover {
+    color: var(--gem-auth-primary);
+    background: var(--gem-auth-secondary);
+    transform: translateY(-1px);
+}
+
+.gem-auth-submit:active {
+    transform: translateY(0);
+}
+
+.gem-auth-feedback {
+    min-height: 0;
+    margin: 0;
+    color: var(--gem-auth-primary);
+    font-size: 12px;
+    text-align: center;
+}
+
+.gem-auth-feedback:not(:empty) {
+    margin-top: 10px;
+}
+
+.gem-auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 17px 0 13px;
+    color: var(--gem-auth-muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    white-space: nowrap;
+}
+
+.gem-auth-divider::before,
+.gem-auth-divider::after {
+    height: 1px;
+    flex: 1;
+    background: var(--gem-auth-border);
+    content: "";
+}
+
+.gem-auth-socials {
+    display: flex;
+    direction: ltr;
+    gap: 11px;
+}
+
+.gem-auth-social {
+    display: flex;
+    min-width: 0;
+    height: 45px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: 1px solid var(--gem-auth-border);
+    border-radius: 6px;
+    color: var(--gem-auth-primary);
+    background: var(--gem-auth-card-bg);
+    cursor: pointer;
+    transition: border-color .2s ease, background-color .2s ease, transform .2s ease;
+}
+
+.gem-auth-social span {
+    color: var(--gem-auth-primary);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.gem-auth-social:hover {
+    border-color: var(--gem-auth-primary);
+    background: var(--gem-auth-secondary);
+    transform: translateY(-1px);
+}
+
+.gem-auth-social i {
+    font-size: 21px;
+}
+
+.gem-auth-facebook {
+    display: grid;
+    width: 23px;
+    height: 23px;
+    place-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #1877F2;
+    font-size: 14px !important;
+}
+
+.gem-auth-apple {
+    color: #000000;
+}
+
+.gem-auth-social img {
+    display: block;
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+}
+
+.gem-auth-switch {
+    margin: 18px 0 8px;
+    color: var(--gem-auth-muted);
+    font-size: 12px;
+}
+
+.gem-auth-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+}
+
+.gem-auth-terms {
+    margin: 1px 0 15px;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.gem-auth-terms a {
+    display: inline;
+}
+
+html.dark-mode .gem-auth-page {
+    --gem-auth-warm-bg: #241c1e;
+    --gem-auth-card-bg: #302326;
+    --gem-auth-input-bg: #241c1e;
+    --gem-auth-border: var(--gem-auth-secondary);
+    --gem-auth-muted: #E8CDBD;
+    color: var(--gem-auth-secondary);
+}
+
+html.dark-mode .gem-auth-preference,
+html.dark-mode .gem-auth-social,
+html.dark-mode .gem-auth-social span {
+    color: var(--gem-auth-secondary);
+}
+
+html.dark-mode .gem-auth-preference:hover,
+html.dark-mode .gem-auth-social:hover {
+    border-color: var(--gem-auth-secondary);
+    color: var(--gem-auth-secondary);
+    background: var(--gem-auth-primary);
+}
+
+html.dark-mode .gem-auth-eye:hover,
+html.dark-mode .gem-auth-eye:focus-visible {
+    color: var(--gem-auth-secondary);
+    background: var(--gem-auth-primary);
+}
+
+html.dark-mode .gem-auth-social:hover span {
+    color: var(--gem-auth-secondary);
+}
+
+html.dark-mode .gem-auth-card h1,
+html.dark-mode .gem-auth-eyebrow,
+html.dark-mode .gem-auth-label,
+html.dark-mode .gem-auth-field-icon,
+html.dark-mode .gem-auth-eye,
+html.dark-mode .gem-auth-inline-link,
+html.dark-mode .gem-auth-switch a,
+html.dark-mode .gem-auth-home,
+html.dark-mode .gem-auth-terms a,
+html.dark-mode .gem-auth-feedback {
+    color: var(--gem-auth-secondary);
+}
+
+html.dark-mode .gem-auth-field input {
+    color: var(--gem-auth-secondary);
+}
+
+html.dark-mode .gem-auth-field input::placeholder {
+    color: var(--gem-auth-secondary);
+}
+
+html.dark-mode .gem-auth-apple {
+    color: #ffffff;
+}
+
+html[dir="rtl"] .gem-auth-page {
+    direction: rtl;
+}
+
+html[dir="rtl"] .gem-auth-toolbar {
+    direction: ltr;
+}
+
+html[dir="rtl"] .gem-auth-field-icon {
+    right: 15px;
+    left: auto;
+}
+
+html[dir="rtl"] .gem-auth-field input {
+    text-align: right;
+}
+
+html[dir="rtl"] .gem-auth-eye {
+    right: auto;
+    left: 8px;
+}
+
+html[dir="rtl"] .gem-auth-options {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .gem-auth-check {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .gem-auth-home {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 600px) {
+    .gem-auth-toolbar {
+        width: calc(100% - 28px);
+        gap: 7px;
+        padding-top: 14px;
+    }
+
+    .gem-auth-preference {
+        min-height: 38px;
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .gem-auth-main {
+        padding: 10px 14px 24px;
+    }
+
+    .gem-auth-card {
+        padding: 28px 23px 25px;
+        border-radius: 10px;
+    }
+
+    .gem-auth-description {
+        margin-bottom: 19px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .gem-auth-options {
+        gap: 6px;
+        font-size: 11px;
+    }
+
+    .gem-auth-card {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+}
+
+
+/* =====================================
+   RTL TOOLBAR POSITION FIX
+===================================== */
+
+/* Default LTR */
+.gem-auth-toolbar {
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+/* RTL toolbar */
+html[dir="rtl"] .gem-auth-toolbar {
+    direction: ltr;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+/* RTL button first - left side */
+html[dir="rtl"] .gem-auth-toolbar [data-gem-auth-rtl] {
+    order: 1;
+}
+
+/* Dark mode button next to RTL - right side */
+html[dir="rtl"] .gem-auth-toolbar [data-gem-auth-theme] {
+    order: 2;
+}
+
+/* =====================================
+   RTL ICON DIRECTION FIX
+===================================== */
+
+/* RTL toggle icon */
+html[dir="rtl"] [data-gem-auth-rtl] i {
+    transform: scaleX(-1);
+}
+
+/* Login / Register submit arrow */
+html[dir="rtl"] .gem-auth-submit i {
+    transform: scaleX(-1);
+}
+
+/* Home navigation directional icon */
+html[dir="rtl"] .gem-auth-home i {
+    transform: scaleX(-1);
+}
+
+/* Password eye icon - no direction change */
+html[dir="rtl"] .gem-auth-eye i {
+    transform: none;
+}
+
+/* Dark mode moon/sun icon - no direction change */
+html[dir="rtl"] [data-gem-auth-theme] i {
+    transform: none;
+}
+
+
+/* RTL Social Login Order */
+html[dir="rtl"] .gem-auth-socials {
+    direction: rtl;
+    flex-direction: row;
+}
+
+/* Google first */
+html[dir="rtl"] .gem-auth-socials .gem-auth-social:nth-child(3) {
+    order: 1;
+}
+
+/* Apple second */
+html[dir="rtl"] .gem-auth-socials .gem-auth-social:nth-child(2) {
+    order: 2;
+}
+
+/* Facebook third */
+html[dir="rtl"] .gem-auth-socials .gem-auth-social:nth-child(1) {
+    order: 3;
+}
+
+
+/* RTL Remember Me & Forgot Password */
+
+html[dir="rtl"] .gem-auth-options {
+    direction: rtl;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Remember Me checkbox and text */
+html[dir="rtl"] .gem-auth-check {
+    direction: rtl;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    text-align: right;
+}
+
+html[dir="rtl"] .gem-auth-check input {
+    margin: 0;
+}
+
+/* Forgot Password alignment */
+html[dir="rtl"] .gem-auth-inline-link {
+    direction: rtl;
+    text-align: left;
+}
