@@ -26043,3 +26043,11 @@ html[dir="rtl"] .gem2-hero-visual {
     }
 
 }
+/* 6px radius for the buttons shown in the requested screenshots */
+.gem-about-story-btn,
+.gem-about-cta-primary,
+.gem-about-cta-secondary,
+.gem-material-apply {
+    border-radius: 6px;
+}
+
