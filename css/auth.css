@@ -108,7 +108,7 @@
 
 .gem-auth-card h1 {
     margin: 0;
-    color: var(--gem-auth-primary);
+    color: #B47D86;
     font-family: "Playfair Display", serif;
     font-size: clamp(27px, 4vw, 34px);
     font-weight: 600;

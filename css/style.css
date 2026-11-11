@@ -6680,15 +6680,24 @@ html[dir="rtl"] .gem2-workshop-schedule-footer a:hover i {
 .gem2-kit-quantity-control input {
     width: 55px;
     height: 43px;
+    padding: 0;
     border: none;
     border-left: 1px solid rgba(129, 75, 85, 0.2);
     border-right: 1px solid rgba(129, 75, 85, 0.2);
+    appearance: textfield;
+    -moz-appearance: textfield;
     text-align: center;
     font-family: var(--body-font);
     font-size: 17px;
     font-weight: 600;
     color: var(--primary-color);
     background: transparent;
+}
+
+.gem2-kit-quantity-control input::-webkit-outer-spin-button,
+.gem2-kit-quantity-control input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
 }
 
 /* =========================================
@@ -7103,6 +7112,8 @@ html.dark-mode .gem2-kit-builder .gem2-kit-choice-group select {
 
 /* RTL Mode */
 html[dir="rtl"] .gem2-kit-builder .gem2-kit-choice-group select {
+    padding-right: 15px !important;
+    padding-left: 55px !important;
     background-position: left 10px center !important;
 }
 
@@ -26049,5 +26060,42 @@ html[dir="rtl"] .gem2-hero-visual {
 .gem-about-cta-secondary,
 .gem-material-apply {
     border-radius: 6px;
+}
+
+/* Center the final two Home 1 featured cards and filtered results */
+@media (min-width: 1025px) {
+    .gem-featured-grid:not(.is-filtered) .gem-product-card:nth-child(5) {
+        grid-column: 2;
+    }
+
+    .gem-featured-grid:not(.is-filtered) .gem-product-card:nth-child(6) {
+        grid-column: 3;
+    }
+}
+
+.gem-featured-grid.is-filtered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gem-featured-grid.is-filtered .gem-product-card {
+    flex: 0 1 calc((100% - 75px) / 4);
+}
+
+@media (max-width: 1024px) {
+    .gem-featured-grid.is-filtered .gem-product-card {
+        flex-basis: calc((100% - 22px) / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .gem2-material-vertical {
+        display: none;
+    }
+
+    .gem-featured-grid.is-filtered .gem-product-card {
+        flex-basis: 100%;
+    }
 }
 
