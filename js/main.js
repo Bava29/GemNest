@@ -3,6 +3,36 @@
 ====================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Home 1 featured product category filters
+    const featuredFilters = document.querySelectorAll(".gem-product-filters .gem-filter-btn");
+    const featuredCards = document.querySelectorAll(".gem-featured-grid .gem-product-card");
+    const featuredGrid = document.querySelector(".gem-featured-grid");
+
+    if (!featuredFilters.length || !featuredCards.length) return;
+
+    featuredFilters.forEach(button => {
+        button.addEventListener("click", function () {
+            const selectedCategory = this.textContent.trim().toLowerCase();
+
+            featuredFilters.forEach(filter => filter.classList.toggle("active", filter === this));
+            featuredGrid.classList.toggle("is-filtered", selectedCategory !== "all");
+
+            featuredCards.forEach(card => {
+                const category = card.querySelector(".gem-product-category")?.textContent.trim().toLowerCase() || "";
+                const matches = selectedCategory === "all"
+                    || (selectedCategory === "beads" && /gemstone|glass/.test(category))
+                    || (selectedCategory === "pearls" && category.includes("pearl"))
+                    || (selectedCategory === "charms" && category.includes("charm"))
+                    || (selectedCategory === "findings" && /accessor|finding/.test(category))
+                    || (selectedCategory === "kits" && category.includes("kit"));
+
+                card.style.display = matches ? "" : "none";
+            });
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
 
     const html = document.documentElement;
 
