@@ -1886,7 +1886,7 @@ html[dir="rtl"] .gem-about-btn:hover i {
 
 .gem-featured-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
 }
 
@@ -26060,17 +26060,6 @@ html[dir="rtl"] .gem2-hero-visual {
 .gem-about-cta-secondary,
 .gem-material-apply {
     border-radius: 6px;
-}
-
-/* Center the final two Home 1 featured cards and filtered results */
-@media (min-width: 1025px) {
-    .gem-featured-grid:not(.is-filtered) .gem-product-card:nth-child(5) {
-        grid-column: 2;
-    }
-
-    .gem-featured-grid:not(.is-filtered) .gem-product-card:nth-child(6) {
-        grid-column: 3;
-    }
 }
 
 .gem-featured-grid.is-filtered {
